@@ -1,5 +1,7 @@
 # Project: Build an ML Pipeline for Short-Term Rental Prices in NYC
 
+A program requirement for Machine Learning DevOps Engineer Nanodegree @ Udacity School of Artificial Intelligence
+
 ## Project Description
 
 A property management company renting rooms and properties for short periods of 
@@ -10,23 +12,21 @@ to be retrained with the same cadence, necessitating a need for an end-to-end pi
 ## Repository Content Description
 Overview of the content in repository:
 
-1)Components: contains components constituting the ML pipeline. See README inside directory
+1)cookie-mlflow-step: contains template to quickly generate new component steps to be used with MLFlow. See README inside directory
 
-2)cookie-mlflow-step: contains template to quickly generate new component steps to be used with MLFlow. See README inside directory
+2)src: contains components constituting the ML pipeline. Each component contains its own conda.yml, MLproject and run.py script.
 
-3)src: contains components constituting the ML pipeline. Each component contains its own conda.yml, MLproject and run.py script.
+3)MLproject: an MLproject for the main pipeline
 
-4)MLproject: an MLproject for the main pipeline
+4)conda.yml: defines all dependencies of the conda environment needed for main pipeline
 
-5)conda.yml: defines all dependencies of the conda environment needed for main pipeline
+5)config.yaml: configuration file containing parameters for the pipeline. Configuration managed by hydra
 
-6)config.yaml: configuration file containing parameters for the pipeline. Configuration managed by hydra
+6)environment.yml: contains all dependencies for conda environment isolation
 
-7)environment.yml: contains all dependencies for conda environment isolation
+7)main.py: drives entire pipeline
 
-8)main.py: drives entire pipeline
-
-9)pipeline graph/wandb end-to-end pipeline graph.png shows entire ML pipeline and its components in graph view. Extracted from wandb
+8)pipeline graph/wandb end-to-end pipeline graph.png: shows entire ML pipeline and its components in graph view. Extracted from wandb
 
 ## ML pipeline artifact/experiment tracking
 Please find my ML pipeline artifacts and experiment on Weights & Biases: https://wandb.ai/f3bolarinwa/MLOps_nyc_airbnb
@@ -73,4 +73,4 @@ mlflow run . \
 mlflow run . -P steps=test_regression_model
 
 14)Train the model on a new data sample by executing in terminal:
-mlflow run https://github.com/f3bolarinwa/MLOps_project_ml_pipeline.git -v 1.0.1 -P hydra_options="etl.sample='sample2.csv'"
+mlflow run https://github.com/f3bolarinwa/MLOps_project_ml_pipeline.git -v 1.0.2 -P hydra_options="etl.sample='sample2.csv'"
