@@ -73,4 +73,4 @@ mlflow run . \
 mlflow run . -P steps=test_regression_model
 
 14)Train the model on a new data sample by executing in terminal:
-mlflow run https://github.com/f3bolarinwa/MLOps_project_ml_pipeline.git -v 1.0.0 -P hydra_options="etl.sample='sample2.csv'"
+mlflow run https://github.com/f3bolarinwa/MLOps_project_ml_pipeline.git -v 1.0.1 -P hydra_options="etl.sample='sample2.csv'"
