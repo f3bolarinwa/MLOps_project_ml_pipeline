@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/femibolarinwa_comp/Downloads/Udacity/MLOps%20Engineer/2-Building%20a%20Reproducible%20Model%20Workflow/MLOps_project_ml_pipeline/mlruns/0/b9169c05c6704d809fd711f8c7cec223/artifacts
+end_time: 1693242981766
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b9169c05c6704d809fd711f8c7cec223
+run_name: polite-zebra-282
+run_uuid: b9169c05c6704d809fd711f8c7cec223
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693242970780
+status: 3
+tags: []
+user_id: femibolarinwa_comp

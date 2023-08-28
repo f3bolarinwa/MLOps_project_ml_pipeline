@@ -1,0 +1,71 @@
+2023-08-25 19:49:30,832 INFO    MainThread:45483 [wandb_setup.py:_flush():69] setting env: {'project': 'nyc_airbnb', 'run_group': 'development'}
+2023-08-25 19:49:30,832 INFO    MainThread:45483 [wandb_setup.py:_flush():69] setting login settings: {}
+2023-08-25 19:49:30,832 INFO    MainThread:45483 [wandb_init.py:_log_setup():334] Logging user logs to /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20230825_194930-1ap0bbh2/logs/debug.log
+2023-08-25 19:49:30,832 INFO    MainThread:45483 [wandb_init.py:_log_setup():335] Logging internal logs to /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20230825_194930-1ap0bbh2/logs/debug-internal.log
+2023-08-25 19:49:30,832 INFO    MainThread:45483 [wandb_init.py:init():367] calling init triggers
+2023-08-25 19:49:30,832 INFO    MainThread:45483 [wandb_init.py:init():372] wandb.init called with sweep_config: {}
+config: {}
+2023-08-25 19:49:30,832 INFO    MainThread:45483 [wandb_init.py:init():416] starting backend
+2023-08-25 19:49:30,832 INFO    MainThread:45483 [backend.py:_multiprocessing_setup():69] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-08-25 19:49:30,841 INFO    MainThread:45483 [backend.py:ensure_launched():123] starting backend process...
+2023-08-25 19:49:30,844 INFO    MainThread:45483 [backend.py:ensure_launched():127] started backend process with pid: 45491
+2023-08-25 19:49:30,845 INFO    MainThread:45483 [wandb_init.py:init():421] backend started and connected
+2023-08-25 19:49:30,847 INFO    MainThread:45483 [wandb_init.py:init():461] updated telemetry
+2023-08-25 19:49:30,847 INFO    MainThread:45483 [wandb_init.py:init():480] communicating current version
+2023-08-25 19:49:31,283 INFO    MainThread:45483 [wandb_init.py:init():485] got version response upgrade_message: "wandb version 0.15.8 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-08-25 19:49:31,283 INFO    MainThread:45483 [wandb_init.py:init():493] communicating run to backend with 30 second timeout
+2023-08-25 19:49:31,490 INFO    MainThread:45483 [wandb_init.py:init():518] starting run threads in backend
+2023-08-25 19:49:31,526 INFO    MainThread:45483 [wandb_run.py:_console_start():1476] atexit reg
+2023-08-25 19:49:31,526 INFO    MainThread:45483 [wandb_run.py:_redirect():1339] redirect: SettingsConsole.REDIRECT
+2023-08-25 19:49:31,527 INFO    MainThread:45483 [wandb_run.py:_redirect():1344] Redirecting console.
+2023-08-25 19:49:31,527 INFO    MainThread:45483 [redirect.py:install():213] install start
+2023-08-25 19:49:31,527 INFO    MainThread:45483 [redirect.py:install():228] install stop
+2023-08-25 19:49:31,527 INFO    MainThread:45483 [redirect.py:install():213] install start
+2023-08-25 19:49:31,527 INFO    MainThread:45483 [redirect.py:install():228] install stop
+2023-08-25 19:49:31,528 INFO    MainThread:45483 [wandb_run.py:_redirect():1390] Redirects installed.
+2023-08-25 19:49:31,528 INFO    MainThread:45483 [wandb_init.py:init():542] run started, returning control to user process
+2023-08-25 19:49:31,529 INFO    MainThread:45483 [wandb_run.py:_config_callback():733] config_cb None None {'trainval_artifact': 'trainval_data.csv:latest', 'val_size': 0.2, 'random_seed': 42, 'stratify_by': 'neighbourhood_group', 'rf_config': '/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/multirun/2023-08-25/19-43-20/10/rf_config.json', 'max_tfidf_features': 30, 'output_artifact': 'random_forest_dir'}
+2023-08-25 19:49:31,530 INFO    MainThread:45483 [wandb_run.py:_config_callback():733] config_cb None None {'n_estimators': 100, 'max_depth': 15, 'min_samples_split': 4, 'min_samples_leaf': 3, 'n_jobs': -1, 'criterion': 'mae', 'max_features': 0.1, 'oob_score': True}
+2023-08-25 19:49:51,499 INFO    MainThread:45483 [wandb_run.py:_atexit_cleanup():1446] got exitcode: 0
+2023-08-25 19:49:51,500 INFO    MainThread:45483 [wandb_run.py:_restore():1418] restore
+2023-08-25 19:49:51,500 INFO    MainThread:45483 [redirect.py:uninstall():232] uninstall start
+2023-08-25 19:49:51,500 INFO    MainThread:45483 [redirect.py:_stop():287] _stop: stdout
+2023-08-25 19:49:51,500 INFO    MainThread:45483 [redirect.py:_stop():293] _stop closed: stdout
+2023-08-25 19:49:51,500 INFO    stdout    :45483 [redirect.py:_pipe_relay():129] relay done saw last write: stdout
+2023-08-25 19:49:51,500 INFO    stdout    :45483 [redirect.py:_pipe_relay():145] relay done done: stdout
+2023-08-25 19:49:51,500 INFO    MainThread:45483 [redirect.py:_stop():299] _stop joined: stdout
+2023-08-25 19:49:51,500 INFO    MainThread:45483 [redirect.py:_stop():301] _stop rd closed: stdout
+2023-08-25 19:49:51,500 INFO    MainThread:45483 [redirect.py:uninstall():236] uninstall done
+2023-08-25 19:49:51,500 INFO    MainThread:45483 [redirect.py:uninstall():232] uninstall start
+2023-08-25 19:49:51,500 INFO    MainThread:45483 [redirect.py:_stop():287] _stop: stderr
+2023-08-25 19:49:51,500 INFO    MainThread:45483 [redirect.py:_stop():293] _stop closed: stderr
+2023-08-25 19:49:51,500 INFO    stderr    :45483 [redirect.py:_pipe_relay():129] relay done saw last write: stderr
+2023-08-25 19:49:51,500 INFO    stderr    :45483 [redirect.py:_pipe_relay():145] relay done done: stderr
+2023-08-25 19:49:51,500 INFO    MainThread:45483 [redirect.py:_stop():299] _stop joined: stderr
+2023-08-25 19:49:51,500 INFO    MainThread:45483 [redirect.py:_stop():301] _stop rd closed: stderr
+2023-08-25 19:49:51,500 INFO    MainThread:45483 [redirect.py:uninstall():236] uninstall done
+2023-08-25 19:49:51,663 INFO    MainThread:45483 [wandb_run.py:_wait_for_finish():1568] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1625
+  total_bytes: 35498
+}
+
+2023-08-25 19:49:53,667 INFO    MainThread:45483 [wandb_run.py:_wait_for_finish():1568] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 38861
+  total_bytes: 38861
+}
+
+2023-08-25 19:49:54,755 INFO    MainThread:45483 [wandb_run.py:_show_summary():1723] rendering summary
+2023-08-25 19:49:54,755 INFO    MainThread:45483 [wandb_run.py:_show_history():1761] rendering history
+2023-08-25 19:49:54,756 INFO    MainThread:45483 [wandb_run.py:_show_files():1790] logging synced files

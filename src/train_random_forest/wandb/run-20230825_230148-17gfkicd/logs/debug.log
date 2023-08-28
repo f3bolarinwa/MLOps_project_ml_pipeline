@@ -1,0 +1,137 @@
+2023-08-25 23:01:48,450 INFO    MainThread:62652 [wandb_setup.py:_flush():69] setting env: {'project': 'nyc_airbnb', 'run_group': 'development'}
+2023-08-25 23:01:48,450 INFO    MainThread:62652 [wandb_setup.py:_flush():69] setting login settings: {}
+2023-08-25 23:01:48,450 INFO    MainThread:62652 [wandb_init.py:_log_setup():334] Logging user logs to /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20230825_230148-17gfkicd/logs/debug.log
+2023-08-25 23:01:48,450 INFO    MainThread:62652 [wandb_init.py:_log_setup():335] Logging internal logs to /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20230825_230148-17gfkicd/logs/debug-internal.log
+2023-08-25 23:01:48,450 INFO    MainThread:62652 [wandb_init.py:init():367] calling init triggers
+2023-08-25 23:01:48,450 INFO    MainThread:62652 [wandb_init.py:init():372] wandb.init called with sweep_config: {}
+config: {}
+2023-08-25 23:01:48,450 INFO    MainThread:62652 [wandb_init.py:init():416] starting backend
+2023-08-25 23:01:48,450 INFO    MainThread:62652 [backend.py:_multiprocessing_setup():69] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-08-25 23:01:48,458 INFO    MainThread:62652 [backend.py:ensure_launched():123] starting backend process...
+2023-08-25 23:01:48,462 INFO    MainThread:62652 [backend.py:ensure_launched():127] started backend process with pid: 62662
+2023-08-25 23:01:48,463 INFO    MainThread:62652 [wandb_init.py:init():421] backend started and connected
+2023-08-25 23:01:48,464 INFO    MainThread:62652 [wandb_init.py:init():461] updated telemetry
+2023-08-25 23:01:48,465 INFO    MainThread:62652 [wandb_init.py:init():480] communicating current version
+2023-08-25 23:01:48,929 INFO    MainThread:62652 [wandb_init.py:init():485] got version response upgrade_message: "wandb version 0.15.8 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-08-25 23:01:48,929 INFO    MainThread:62652 [wandb_init.py:init():493] communicating run to backend with 30 second timeout
+2023-08-25 23:01:49,193 INFO    MainThread:62652 [wandb_init.py:init():518] starting run threads in backend
+2023-08-25 23:01:49,216 INFO    MainThread:62652 [wandb_run.py:_console_start():1476] atexit reg
+2023-08-25 23:01:49,217 INFO    MainThread:62652 [wandb_run.py:_redirect():1339] redirect: SettingsConsole.REDIRECT
+2023-08-25 23:01:49,217 INFO    MainThread:62652 [wandb_run.py:_redirect():1344] Redirecting console.
+2023-08-25 23:01:49,217 INFO    MainThread:62652 [redirect.py:install():213] install start
+2023-08-25 23:01:49,217 INFO    MainThread:62652 [redirect.py:install():228] install stop
+2023-08-25 23:01:49,217 INFO    MainThread:62652 [redirect.py:install():213] install start
+2023-08-25 23:01:49,217 INFO    MainThread:62652 [redirect.py:install():228] install stop
+2023-08-25 23:01:49,218 INFO    MainThread:62652 [wandb_run.py:_redirect():1390] Redirects installed.
+2023-08-25 23:01:49,218 INFO    MainThread:62652 [wandb_init.py:init():542] run started, returning control to user process
+2023-08-25 23:01:49,219 INFO    MainThread:62652 [wandb_run.py:_config_callback():733] config_cb None None {'trainval_artifact': 'trainval_data.csv:latest', 'val_size': 0.2, 'random_seed': 42, 'stratify_by': 'neighbourhood_group', 'rf_config': '/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/multirun/2023-08-25/21-12-05/115/rf_config.json', 'max_tfidf_features': 10, 'output_artifact': 'random_forest_dir'}
+2023-08-25 23:01:49,219 INFO    MainThread:62652 [wandb_run.py:_config_callback():733] config_cb None None {'n_estimators': 100, 'max_depth': 20, 'min_samples_split': 4, 'min_samples_leaf': 2, 'n_jobs': -1, 'criterion': 'mae', 'max_features': 0.9, 'oob_score': True}
+2023-08-25 23:03:19,029 ERROR   MainThread:62652 [retry.py:__call__():111] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1092, in _validate_conn
+    conn.connect()
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/urllib3/connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/urllib3/connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x123d69730>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x123d69730>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/wandb/old/retry.py", line 96, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/wandb/apis/public.py", line 181, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-74304ed302c44015bdb5f7b6cd38aa0a15eebeb9/lib/python3.9/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x123d69730>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+2023-08-25 23:03:23,747 INFO    MainThread:62652 [wandb_run.py:_atexit_cleanup():1446] got exitcode: 0
+2023-08-25 23:03:23,747 INFO    MainThread:62652 [wandb_run.py:_restore():1418] restore
+2023-08-25 23:03:23,747 INFO    MainThread:62652 [redirect.py:uninstall():232] uninstall start
+2023-08-25 23:03:23,747 INFO    MainThread:62652 [redirect.py:_stop():287] _stop: stdout
+2023-08-25 23:03:23,747 INFO    MainThread:62652 [redirect.py:_stop():293] _stop closed: stdout
+2023-08-25 23:03:23,748 INFO    stdout    :62652 [redirect.py:_pipe_relay():129] relay done saw last write: stdout
+2023-08-25 23:03:23,748 INFO    stdout    :62652 [redirect.py:_pipe_relay():145] relay done done: stdout
+2023-08-25 23:03:23,748 INFO    MainThread:62652 [redirect.py:_stop():299] _stop joined: stdout
+2023-08-25 23:03:23,748 INFO    MainThread:62652 [redirect.py:_stop():301] _stop rd closed: stdout
+2023-08-25 23:03:23,748 INFO    MainThread:62652 [redirect.py:uninstall():236] uninstall done
+2023-08-25 23:03:23,748 INFO    MainThread:62652 [redirect.py:uninstall():232] uninstall start
+2023-08-25 23:03:23,748 INFO    MainThread:62652 [redirect.py:_stop():287] _stop: stderr
+2023-08-25 23:03:23,748 INFO    MainThread:62652 [redirect.py:_stop():293] _stop closed: stderr
+2023-08-25 23:03:23,748 INFO    stderr    :62652 [redirect.py:_pipe_relay():129] relay done saw last write: stderr
+2023-08-25 23:03:23,748 INFO    stderr    :62652 [redirect.py:_pipe_relay():145] relay done done: stderr
+2023-08-25 23:03:23,748 INFO    MainThread:62652 [redirect.py:_stop():299] _stop joined: stderr
+2023-08-25 23:03:23,748 INFO    MainThread:62652 [redirect.py:_stop():301] _stop rd closed: stderr
+2023-08-25 23:03:23,748 INFO    MainThread:62652 [redirect.py:uninstall():236] uninstall done
+2023-08-25 23:03:38,896 INFO    MainThread:62652 [wandb_run.py:_wait_for_finish():1568] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 1
+  artifact_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 32719378
+  total_bytes: 32753238
+  deduped_bytes: 463
+}
+
+2023-08-25 23:03:40,900 INFO    MainThread:62652 [wandb_run.py:_wait_for_finish():1568] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+  media_count: 1
+  artifact_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 32757068
+  total_bytes: 32757068
+  deduped_bytes: 463
+}
+
+2023-08-25 23:03:41,967 INFO    MainThread:62652 [wandb_run.py:_show_summary():1723] rendering summary
+2023-08-25 23:03:41,967 INFO    MainThread:62652 [wandb_run.py:_show_history():1761] rendering history
+2023-08-25 23:03:41,967 INFO    MainThread:62652 [wandb_run.py:_show_files():1790] logging synced files

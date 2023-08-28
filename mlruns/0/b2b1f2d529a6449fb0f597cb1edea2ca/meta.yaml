@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/femibolarinwa_comp/Downloads/Udacity/MLOps%20Engineer/2-Building%20a%20Reproducible%20Model%20Workflow/MLOps_project_ml_pipeline/mlruns/0/b2b1f2d529a6449fb0f597cb1edea2ca/artifacts
+end_time: 1693242434466
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b2b1f2d529a6449fb0f597cb1edea2ca
+run_name: clumsy-boar-856
+run_uuid: b2b1f2d529a6449fb0f597cb1edea2ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693242386414
+status: 3
+tags: []
+user_id: femibolarinwa_comp

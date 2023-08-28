@@ -1,0 +1,30 @@
+/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/numba/core/decorators.py:262: NumbaDeprecationWarning: [1mnumba.generated_jit is deprecated. Please see the documentation at: https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-generated-jit for more information and advice on a suitable replacement.
+  warnings.warn(msg, NumbaDeprecationWarning)
+/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/visions/backends/shared/nan_handling.py:51: NumbaDeprecationWarning: [1mThe 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def hasna(x: np.ndarray) -> bool:
+Exception in thread FileStreamThread:
+Traceback (most recent call last):
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/threading.py", line 917, in run
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 295, in _thread_except_body
+    raise e
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 289, in _thread_except_body
+    self._thread_body()
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 273, in _thread_body
+    request_with_retry(
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 391, in request_with_retry
+    response = func(*args, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/requests/sessions.py", line 637, in post
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/requests/adapters.py", line 458, in send
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/requests/adapters.py", line 261, in cert_verify
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/certifi/cacert.pem
+Exception in thread Thread-8:
+Traceback (most recent call last):
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/threading.py", line 917, in run
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 180, in check_network_status
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 755, in communicate_network_status
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 545, in _communicate
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-e8259d51dc50fb371e1448ce1e37eadca6449bc1/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 550, in _communicate_async

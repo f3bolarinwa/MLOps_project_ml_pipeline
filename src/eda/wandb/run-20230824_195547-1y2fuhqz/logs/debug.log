@@ -1,0 +1,41 @@
+2023-08-24 19:55:47,951 INFO    MainThread:38543 [wandb_setup.py:_flush():69] setting env: {}
+2023-08-24 19:55:47,951 INFO    MainThread:38543 [wandb_setup.py:_flush():69] setting login settings: {}
+2023-08-24 19:55:47,952 INFO    MainThread:38543 [wandb_init.py:_log_setup():336] Logging user logs to /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/eda/wandb/run-20230824_195547-1y2fuhqz/logs/debug.log
+2023-08-24 19:55:47,952 INFO    MainThread:38543 [wandb_init.py:_log_setup():337] Logging internal logs to /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/eda/wandb/run-20230824_195547-1y2fuhqz/logs/debug-internal.log
+2023-08-24 19:55:47,952 INFO    MainThread:38543 [wandb_init.py:_jupyter_setup():287] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x11d390f40>
+2023-08-24 19:55:47,952 INFO    MainThread:38543 [wandb_init.py:init():369] calling init triggers
+2023-08-24 19:55:47,953 INFO    MainThread:38543 [wandb_init.py:init():374] wandb.init called with sweep_config: {}
+config: {}
+2023-08-24 19:55:47,953 INFO    MainThread:38543 [wandb_init.py:init():418] starting backend
+2023-08-24 19:55:47,953 INFO    MainThread:38543 [backend.py:_multiprocessing_setup():70] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-08-24 19:55:47,965 INFO    MainThread:38543 [backend.py:ensure_launched():132] starting backend process...
+2023-08-24 19:55:47,971 INFO    MainThread:38543 [backend.py:ensure_launched():136] started backend process with pid: 38720
+2023-08-24 19:55:47,972 INFO    MainThread:38543 [wandb_init.py:init():423] backend started and connected
+2023-08-24 19:55:48,017 INFO    MainThread:38543 [wandb_init.py:init():465] updated telemetry
+2023-08-24 19:55:48,017 INFO    MainThread:38543 [wandb_init.py:init():484] communicating current version
+2023-08-24 19:55:48,495 INFO    MainThread:38543 [wandb_init.py:init():489] got version response upgrade_message: "wandb version 0.15.8 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-08-24 19:55:48,496 INFO    MainThread:38543 [wandb_init.py:init():497] communicating run to backend with 30 second timeout
+2023-08-24 19:55:48,774 INFO    MainThread:38543 [wandb_init.py:init():522] starting run threads in backend
+2023-08-24 19:55:50,453 INFO    MainThread:38543 [wandb_run.py:_console_start():1538] atexit reg
+2023-08-24 19:55:50,453 INFO    MainThread:38543 [wandb_run.py:_redirect():1412] redirect: SettingsConsole.WRAP
+2023-08-24 19:55:50,453 INFO    MainThread:38543 [wandb_run.py:_redirect():1449] Wrapping output streams.
+2023-08-24 19:55:50,453 INFO    MainThread:38543 [wandb_run.py:_redirect():1473] Redirects installed.
+2023-08-24 19:55:50,453 INFO    MainThread:38543 [wandb_init.py:init():547] run started, returning control to user process
+2023-08-24 19:55:51,284 INFO    MainThread:38543 [wandb_init.py:_pause_backend():249] pausing backend
+2023-08-24 19:55:51,284 INFO    MainThread:38543 [jupyter.py:save_ipynb():268] looking for notebook: EDA.ipynb
+2023-08-24 19:55:51,418 INFO    MainThread:38543 [wandb_init.py:_pause_backend():253] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x11d39d400>
+2023-08-24 19:56:07,138 INFO    MainThread:38543 [wandb_init.py:_resume_backend():258] resuming backend
+2023-08-24 19:56:22,695 INFO    MainThread:38543 [wandb_init.py:_pause_backend():249] pausing backend
+2023-08-24 19:56:22,696 INFO    MainThread:38543 [jupyter.py:save_ipynb():268] looking for notebook: EDA.ipynb
+2023-08-24 19:56:22,864 INFO    MainThread:38543 [wandb_init.py:_pause_backend():253] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x13e5c01c0>
+2023-08-24 19:59:10,365 INFO    MainThread:38543 [wandb_init.py:_resume_backend():258] resuming backend
+2023-08-24 19:59:10,394 INFO    MainThread:38543 [wandb_init.py:_pause_backend():249] pausing backend
+2023-08-24 19:59:10,394 INFO    MainThread:38543 [jupyter.py:save_ipynb():268] looking for notebook: EDA.ipynb
+2023-08-24 19:59:10,567 INFO    MainThread:38543 [wandb_init.py:_pause_backend():253] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x14983fca0>
+2023-08-24 19:59:40,566 INFO    MainThread:38543 [wandb_init.py:_resume_backend():258] resuming backend
+2023-08-24 19:59:40,613 INFO    MainThread:38543 [wandb_init.py:_pause_backend():249] pausing backend
+2023-08-24 19:59:40,613 INFO    MainThread:38543 [jupyter.py:save_ipynb():268] looking for notebook: EDA.ipynb
+2023-08-24 19:59:40,800 INFO    MainThread:38543 [wandb_init.py:_pause_backend():253] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x13e6c9b20>
+2023-08-24 20:00:17,603 INFO    MainThread:38543 [wandb_init.py:_resume_backend():258] resuming backend
+2023-08-24 20:00:17,608 INFO    MainThread:38543 [wandb_run.py:finish():1208] finishing run f3bolarinwa/nyc_airbnb/1y2fuhqz

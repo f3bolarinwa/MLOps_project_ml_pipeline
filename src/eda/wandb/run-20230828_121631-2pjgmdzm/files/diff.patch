@@ -1,0 +1,912 @@
+diff --git a/src/eda/EDA.ipynb b/src/eda/EDA.ipynb
+index 7469189..29ece57 100644
+--- a/src/eda/EDA.ipynb
++++ b/src/eda/EDA.ipynb
+@@ -1,8 +1,29 @@
+ {
+  "cells": [
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "## Project: Building ML pipeline-for-short-term-rental-prices"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "### Notebook for EDA"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "#### Importing Libraries"
++   ]
++  },
+   {
+    "cell_type": "code",
+-   "execution_count": 1,
++   "execution_count": 2,
+    "metadata": {
+     "azdata_cell_guid": "60b5b2e3-e326-4273-bd07-fe8caad31645",
+     "language": "python"
+@@ -13,12 +34,20 @@
+     "import pandas as pd"
+    ]
+   },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "#### Extracting Data from Wandb"
++   ]
++  },
+   {
+    "cell_type": "code",
+-   "execution_count": 2,
++   "execution_count": 3,
+    "metadata": {
+     "azdata_cell_guid": "afc7fcd6-90df-4faa-9277-f31916801cb1",
+-    "language": "python"
++    "language": "python",
++    "scrolled": true
+    },
+    "outputs": [
+     {
+@@ -26,6 +55,8 @@
+      "output_type": "stream",
+      "text": [
+       "\u001b[34m\u001b[1mwandb\u001b[0m: Currently logged in as: \u001b[33mf3bolarinwa\u001b[0m (use `wandb login --relogin` to force relogin)\n",
++      "/Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages/IPython/html.py:12: ShimWarning: The `IPython.html` package has been deprecated since IPython 4.0. You should import from `notebook` instead. `IPython.html.widgets` has moved to `ipywidgets`.\n",
++      "  warn(\"The `IPython.html` package has been deprecated since IPython 4.0. \"\n",
+       "\u001b[34m\u001b[1mwandb\u001b[0m: wandb version 0.15.8 is available!  To upgrade, please run:\n",
+       "\u001b[34m\u001b[1mwandb\u001b[0m:  $ pip install wandb --upgrade\n"
+      ]
+@@ -35,10 +66,10 @@
+       "text/html": [
+        "\n",
+        "                Tracking run with wandb version 0.10.31<br/>\n",
+-       "                Syncing run <strong style=\"color:#cdcd00\">hardy-sky-7</strong> to <a href=\"https://wandb.ai\" target=\"_blank\">Weights & Biases</a> <a href=\"https://docs.wandb.com/integrations/jupyter.html\" target=\"_blank\">(Documentation)</a>.<br/>\n",
++       "                Syncing run <strong style=\"color:#cdcd00\">deft-glitter-166</strong> to <a href=\"https://wandb.ai\" target=\"_blank\">Weights & Biases</a> <a href=\"https://docs.wandb.com/integrations/jupyter.html\" target=\"_blank\">(Documentation)</a>.<br/>\n",
+        "                Project page: <a href=\"https://wandb.ai/f3bolarinwa/MLOps_nyc_airbnb\" target=\"_blank\">https://wandb.ai/f3bolarinwa/MLOps_nyc_airbnb</a><br/>\n",
+-       "                Run page: <a href=\"https://wandb.ai/f3bolarinwa/MLOps_nyc_airbnb/runs/351toebh\" target=\"_blank\">https://wandb.ai/f3bolarinwa/MLOps_nyc_airbnb/runs/351toebh</a><br/>\n",
+-       "                Run data is saved locally in <code>/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/eda/wandb/run-20230827_133757-351toebh</code><br/><br/>\n",
++       "                Run page: <a href=\"https://wandb.ai/f3bolarinwa/MLOps_nyc_airbnb/runs/1uncjo3v\" target=\"_blank\">https://wandb.ai/f3bolarinwa/MLOps_nyc_airbnb/runs/1uncjo3v</a><br/>\n",
++       "                Run data is saved locally in <code>/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/eda/wandb/run-20230828_120804-1uncjo3v</code><br/><br/>\n",
+        "            "
+       ],
+       "text/plain": [
+@@ -56,166 +87,39 @@
+    ]
+   },
+   {
+-   "cell_type": "code",
+-   "execution_count": 3,
+-   "metadata": {
+-    "azdata_cell_guid": "9d413812-de56-4e3d-888a-99343c2d7682",
+-    "language": "python"
+-   },
+-   "outputs": [
+-    {
+-     "name": "stderr",
+-     "output_type": "stream",
+-     "text": [
+-      "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-9b415884987137d6e4126f77b409f166a1853da1/lib/python3.9/site-packages/numba/core/decorators.py:262: NumbaDeprecationWarning: \u001b[1mnumba.generated_jit is deprecated. Please see the documentation at: https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-generated-jit for more information and advice on a suitable replacement.\u001b[0m\n",
+-      "  warnings.warn(msg, NumbaDeprecationWarning)\n",
+-      "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-9b415884987137d6e4126f77b409f166a1853da1/lib/python3.9/site-packages/visions/backends/shared/nan_handling.py:51: NumbaDeprecationWarning: \u001b[1mThe 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.\u001b[0m\n",
+-      "  def hasna(x: np.ndarray) -> bool:\n"
+-     ]
+-    },
+-    {
+-     "data": {
+-      "application/vnd.jupyter.widget-view+json": {
+-       "model_id": "e68b6270ba85434a879c39a068306aca",
+-       "version_major": 2,
+-       "version_minor": 0
+-      },
+-      "text/plain": [
+-       "Summarize dataset:   0%|          | 0/5 [00:00<?, ?it/s]"
+-      ]
+-     },
+-     "metadata": {},
+-     "output_type": "display_data"
+-    },
+-    {
+-     "data": {
+-      "application/vnd.jupyter.widget-view+json": {
+-       "model_id": "54c9d523870e43eb8013c1dcb2e97d0c",
+-       "version_major": 2,
+-       "version_minor": 0
+-      },
+-      "text/plain": [
+-       "Generate report structure:   0%|          | 0/1 [00:00<?, ?it/s]"
+-      ]
+-     },
+-     "metadata": {},
+-     "output_type": "display_data"
+-    },
+-    {
+-     "data": {
+-      "application/vnd.jupyter.widget-view+json": {
+-       "model_id": "6c5711be5af040599b5c5a57a37b0796",
+-       "version_major": 2,
+-       "version_minor": 0
+-      },
+-      "text/plain": [
+-       "Render widgets:   0%|          | 0/1 [00:00<?, ?it/s]"
+-      ]
+-     },
+-     "metadata": {},
+-     "output_type": "display_data"
+-    },
+-    {
+-     "name": "stderr",
+-     "output_type": "stream",
+-     "text": [
+-      "IOPub message rate exceeded.\n",
+-      "The Jupyter server will temporarily stop sending output\n",
+-      "to the client in order to avoid crashing it.\n",
+-      "To change this limit, set the config variable\n",
+-      "`--ServerApp.iopub_msg_rate_limit`.\n",
+-      "\n",
+-      "Current values:\n",
+-      "ServerApp.iopub_msg_rate_limit=1000.0 (msgs/sec)\n",
+-      "ServerApp.rate_limit_window=3.0 (secs)\n",
+-      "\n",
+-      "IOPub message rate exceeded.\n",
+-      "The Jupyter server will temporarily stop sending output\n",
+-      "to the client in order to avoid crashing it.\n",
+-      "To change this limit, set the config variable\n",
+-      "`--ServerApp.iopub_msg_rate_limit`.\n",
+-      "\n",
+-      "Current values:\n",
+-      "ServerApp.iopub_msg_rate_limit=1000.0 (msgs/sec)\n",
+-      "ServerApp.rate_limit_window=3.0 (secs)\n",
+-      "\n"
+-     ]
+-    }
+-   ],
++   "cell_type": "markdown",
++   "metadata": {},
+    "source": [
+-    "import pandas_profiling\n",
+-    "\n",
+-    "profile = pandas_profiling.ProfileReport(df)\n",
+-    "profile.to_widgets()"
++    "#### Data Overview"
+    ]
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 4,
++   "execution_count": null,
+    "metadata": {
+-    "azdata_cell_guid": "4ec31603-d5a3-4172-85ac-deb03266ea2b",
++    "azdata_cell_guid": "9d413812-de56-4e3d-888a-99343c2d7682",
+     "language": "python"
+    },
+    "outputs": [],
+    "source": [
+-    "# Drop outliers\n",
+-    "min_price = 10\n",
+-    "max_price = 350\n",
+-    "idx = df['price'].between(min_price, max_price)\n",
+-    "df = df[idx].copy()\n",
+-    "# Convert last_review to datetime\n",
+-    "df['last_review'] = pd.to_datetime(df['last_review'])"
++    "import pandas_profiling\n",
++    "\n",
++    "profile = pandas_profiling.ProfileReport(df)\n",
++    "profile.to_widgets()"
+    ]
+   },
+   {
+-   "cell_type": "code",
+-   "execution_count": 5,
+-   "metadata": {
+-    "azdata_cell_guid": "76d04d5d-a71b-4dba-96a1-52fecc3fff4e",
+-    "language": "python"
+-   },
+-   "outputs": [
+-    {
+-     "name": "stdout",
+-     "output_type": "stream",
+-     "text": [
+-      "<class 'pandas.core.frame.DataFrame'>\n",
+-      "Int64Index: 19001 entries, 0 to 19999\n",
+-      "Data columns (total 16 columns):\n",
+-      " #   Column                          Non-Null Count  Dtype         \n",
+-      "---  ------                          --------------  -----         \n",
+-      " 0   id                              19001 non-null  int64         \n",
+-      " 1   name                            18994 non-null  object        \n",
+-      " 2   host_id                         19001 non-null  int64         \n",
+-      " 3   host_name                       18993 non-null  object        \n",
+-      " 4   neighbourhood_group             19001 non-null  object        \n",
+-      " 5   neighbourhood                   19001 non-null  object        \n",
+-      " 6   latitude                        19001 non-null  float64       \n",
+-      " 7   longitude                       19001 non-null  float64       \n",
+-      " 8   room_type                       19001 non-null  object        \n",
+-      " 9   price                           19001 non-null  int64         \n",
+-      " 10  minimum_nights                  19001 non-null  int64         \n",
+-      " 11  number_of_reviews               19001 non-null  int64         \n",
+-      " 12  last_review                     15243 non-null  datetime64[ns]\n",
+-      " 13  reviews_per_month               15243 non-null  float64       \n",
+-      " 14  calculated_host_listings_count  19001 non-null  int64         \n",
+-      " 15  availability_365                19001 non-null  int64         \n",
+-      "dtypes: datetime64[ns](1), float64(3), int64(7), object(5)\n",
+-      "memory usage: 2.5+ MB\n"
+-     ]
+-    }
+-   ],
++   "cell_type": "markdown",
++   "metadata": {},
+    "source": [
+-    "df.info()"
++    "Observation:\n",
++    "- widget is not able to load properly on my computer. i'll use other pandas tools to examine data"
+    ]
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 6,
+-   "metadata": {
+-    "azdata_cell_guid": "f8c18a4e-3f2e-453e-8775-0ae8cc1d21fc",
+-    "language": "python"
+-   },
++   "execution_count": 7,
++   "metadata": {},
+    "outputs": [
+     {
+      "data": {
+@@ -259,134 +163,134 @@
+        "  <tbody>\n",
+        "    <tr>\n",
+        "      <th>0</th>\n",
+-       "      <td>9138664</td>\n",
+-       "      <td>Private Lg Room 15 min to Manhattan</td>\n",
+-       "      <td>47594947</td>\n",
+-       "      <td>Iris</td>\n",
+-       "      <td>Queens</td>\n",
+-       "      <td>Sunnyside</td>\n",
+-       "      <td>40.74271</td>\n",
+-       "      <td>-73.92493</td>\n",
++       "      <td>2539</td>\n",
++       "      <td>Clean &amp; quiet apt home by the park</td>\n",
++       "      <td>2787</td>\n",
++       "      <td>John</td>\n",
++       "      <td>Brooklyn</td>\n",
++       "      <td>Kensington</td>\n",
++       "      <td>40.64749</td>\n",
++       "      <td>-73.97237</td>\n",
+        "      <td>Private room</td>\n",
+-       "      <td>74</td>\n",
+-       "      <td>2</td>\n",
+-       "      <td>6</td>\n",
+-       "      <td>2019-05-26</td>\n",
+-       "      <td>0.13</td>\n",
++       "      <td>149</td>\n",
+        "      <td>1</td>\n",
+-       "      <td>5</td>\n",
++       "      <td>9</td>\n",
++       "      <td>2018-10-19</td>\n",
++       "      <td>0.21</td>\n",
++       "      <td>6</td>\n",
++       "      <td>365</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>1</th>\n",
+-       "      <td>31444015</td>\n",
+-       "      <td>TIME SQUARE CHARMING ONE BED IN HELL'S KITCHEN...</td>\n",
+-       "      <td>8523790</td>\n",
+-       "      <td>Johlex</td>\n",
++       "      <td>2595</td>\n",
++       "      <td>Skylit Midtown Castle</td>\n",
++       "      <td>2845</td>\n",
++       "      <td>Jennifer</td>\n",
+        "      <td>Manhattan</td>\n",
+-       "      <td>Hell's Kitchen</td>\n",
+-       "      <td>40.76682</td>\n",
+-       "      <td>-73.98878</td>\n",
++       "      <td>Midtown</td>\n",
++       "      <td>40.75362</td>\n",
++       "      <td>-73.98377</td>\n",
+        "      <td>Entire home/apt</td>\n",
+-       "      <td>170</td>\n",
+-       "      <td>3</td>\n",
+-       "      <td>0</td>\n",
+-       "      <td>NaT</td>\n",
+-       "      <td>NaN</td>\n",
++       "      <td>225</td>\n",
+        "      <td>1</td>\n",
+-       "      <td>188</td>\n",
++       "      <td>45</td>\n",
++       "      <td>2019-05-21</td>\n",
++       "      <td>0.38</td>\n",
++       "      <td>2</td>\n",
++       "      <td>355</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>2</th>\n",
+-       "      <td>8741020</td>\n",
+-       "      <td>Voted #1 Location Quintessential 1BR W Village...</td>\n",
+-       "      <td>45854238</td>\n",
+-       "      <td>John</td>\n",
++       "      <td>3647</td>\n",
++       "      <td>THE VILLAGE OF HARLEM....NEW YORK !</td>\n",
++       "      <td>4632</td>\n",
++       "      <td>Elisabeth</td>\n",
+        "      <td>Manhattan</td>\n",
+-       "      <td>West Village</td>\n",
+-       "      <td>40.73631</td>\n",
+-       "      <td>-74.00611</td>\n",
+-       "      <td>Entire home/apt</td>\n",
+-       "      <td>245</td>\n",
++       "      <td>Harlem</td>\n",
++       "      <td>40.80902</td>\n",
++       "      <td>-73.94190</td>\n",
++       "      <td>Private room</td>\n",
++       "      <td>150</td>\n",
+        "      <td>3</td>\n",
+-       "      <td>51</td>\n",
+-       "      <td>2018-09-19</td>\n",
+-       "      <td>1.12</td>\n",
+-       "      <td>1</td>\n",
+        "      <td>0</td>\n",
++       "      <td>NaN</td>\n",
++       "      <td>NaN</td>\n",
++       "      <td>1</td>\n",
++       "      <td>365</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>3</th>\n",
+-       "      <td>34602077</td>\n",
+-       "      <td>Spacious 1 bedroom apartment 15min from Manhattan</td>\n",
+-       "      <td>261055465</td>\n",
+-       "      <td>Regan</td>\n",
+-       "      <td>Queens</td>\n",
+-       "      <td>Astoria</td>\n",
+-       "      <td>40.76424</td>\n",
+-       "      <td>-73.92351</td>\n",
++       "      <td>3831</td>\n",
++       "      <td>Cozy Entire Floor of Brownstone</td>\n",
++       "      <td>4869</td>\n",
++       "      <td>LisaRoxanne</td>\n",
++       "      <td>Brooklyn</td>\n",
++       "      <td>Clinton Hill</td>\n",
++       "      <td>40.68514</td>\n",
++       "      <td>-73.95976</td>\n",
+        "      <td>Entire home/apt</td>\n",
+-       "      <td>125</td>\n",
+-       "      <td>3</td>\n",
++       "      <td>89</td>\n",
+        "      <td>1</td>\n",
+-       "      <td>2019-05-24</td>\n",
+-       "      <td>0.65</td>\n",
++       "      <td>270</td>\n",
++       "      <td>2019-07-05</td>\n",
++       "      <td>4.64</td>\n",
+        "      <td>1</td>\n",
+-       "      <td>13</td>\n",
++       "      <td>194</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>4</th>\n",
+-       "      <td>23203149</td>\n",
+-       "      <td>Big beautiful bedroom in huge Bushwick apartment</td>\n",
+-       "      <td>143460</td>\n",
+-       "      <td>Megan</td>\n",
+-       "      <td>Brooklyn</td>\n",
+-       "      <td>Bushwick</td>\n",
+-       "      <td>40.69839</td>\n",
+-       "      <td>-73.92044</td>\n",
+-       "      <td>Private room</td>\n",
+-       "      <td>65</td>\n",
+-       "      <td>2</td>\n",
+-       "      <td>8</td>\n",
+-       "      <td>2019-06-23</td>\n",
+-       "      <td>0.52</td>\n",
+-       "      <td>2</td>\n",
+-       "      <td>8</td>\n",
++       "      <td>5022</td>\n",
++       "      <td>Entire Apt: Spacious Studio/Loft by central park</td>\n",
++       "      <td>7192</td>\n",
++       "      <td>Laura</td>\n",
++       "      <td>Manhattan</td>\n",
++       "      <td>East Harlem</td>\n",
++       "      <td>40.79851</td>\n",
++       "      <td>-73.94399</td>\n",
++       "      <td>Entire home/apt</td>\n",
++       "      <td>80</td>\n",
++       "      <td>10</td>\n",
++       "      <td>9</td>\n",
++       "      <td>2018-11-19</td>\n",
++       "      <td>0.10</td>\n",
++       "      <td>1</td>\n",
++       "      <td>0</td>\n",
+        "    </tr>\n",
+        "  </tbody>\n",
+        "</table>\n",
+        "</div>"
+       ],
+       "text/plain": [
+-       "         id                                               name    host_id  \\\n",
+-       "0   9138664                Private Lg Room 15 min to Manhattan   47594947   \n",
+-       "1  31444015  TIME SQUARE CHARMING ONE BED IN HELL'S KITCHEN...    8523790   \n",
+-       "2   8741020  Voted #1 Location Quintessential 1BR W Village...   45854238   \n",
+-       "3  34602077  Spacious 1 bedroom apartment 15min from Manhattan  261055465   \n",
+-       "4  23203149   Big beautiful bedroom in huge Bushwick apartment     143460   \n",
++       "     id                                              name  host_id  \\\n",
++       "0  2539                Clean & quiet apt home by the park     2787   \n",
++       "1  2595                             Skylit Midtown Castle     2845   \n",
++       "2  3647               THE VILLAGE OF HARLEM....NEW YORK !     4632   \n",
++       "3  3831                   Cozy Entire Floor of Brownstone     4869   \n",
++       "4  5022  Entire Apt: Spacious Studio/Loft by central park     7192   \n",
+        "\n",
+-       "  host_name neighbourhood_group   neighbourhood  latitude  longitude  \\\n",
+-       "0      Iris              Queens       Sunnyside  40.74271  -73.92493   \n",
+-       "1    Johlex           Manhattan  Hell's Kitchen  40.76682  -73.98878   \n",
+-       "2      John           Manhattan    West Village  40.73631  -74.00611   \n",
+-       "3     Regan              Queens         Astoria  40.76424  -73.92351   \n",
+-       "4     Megan            Brooklyn        Bushwick  40.69839  -73.92044   \n",
++       "     host_name neighbourhood_group neighbourhood  latitude  longitude  \\\n",
++       "0         John            Brooklyn    Kensington  40.64749  -73.97237   \n",
++       "1     Jennifer           Manhattan       Midtown  40.75362  -73.98377   \n",
++       "2    Elisabeth           Manhattan        Harlem  40.80902  -73.94190   \n",
++       "3  LisaRoxanne            Brooklyn  Clinton Hill  40.68514  -73.95976   \n",
++       "4        Laura           Manhattan   East Harlem  40.79851  -73.94399   \n",
+        "\n",
+        "         room_type  price  minimum_nights  number_of_reviews last_review  \\\n",
+-       "0     Private room     74               2                  6  2019-05-26   \n",
+-       "1  Entire home/apt    170               3                  0         NaT   \n",
+-       "2  Entire home/apt    245               3                 51  2018-09-19   \n",
+-       "3  Entire home/apt    125               3                  1  2019-05-24   \n",
+-       "4     Private room     65               2                  8  2019-06-23   \n",
++       "0     Private room    149               1                  9  2018-10-19   \n",
++       "1  Entire home/apt    225               1                 45  2019-05-21   \n",
++       "2     Private room    150               3                  0         NaN   \n",
++       "3  Entire home/apt     89               1                270  2019-07-05   \n",
++       "4  Entire home/apt     80              10                  9  2018-11-19   \n",
+        "\n",
+        "   reviews_per_month  calculated_host_listings_count  availability_365  \n",
+-       "0               0.13                               1                 5  \n",
+-       "1                NaN                               1               188  \n",
+-       "2               1.12                               1                 0  \n",
+-       "3               0.65                               1                13  \n",
+-       "4               0.52                               2                 8  "
++       "0               0.21                               6               365  \n",
++       "1               0.38                               2               355  \n",
++       "2                NaN                               1               365  \n",
++       "3               4.64                               1               194  \n",
++       "4               0.10                               1                 0  "
+       ]
+      },
+-     "execution_count": 6,
++     "execution_count": 7,
+      "metadata": {},
+      "output_type": "execute_result"
+     }
+@@ -397,33 +301,350 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 7,
+-   "metadata": {
+-    "azdata_cell_guid": "47c6b5df-3500-4205-983b-a4ed378114a8",
+-    "language": "python"
+-   },
++   "execution_count": 5,
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "<class 'pandas.core.frame.DataFrame'>\n",
++      "RangeIndex: 48895 entries, 0 to 48894\n",
++      "Data columns (total 16 columns):\n",
++      " #   Column                          Non-Null Count  Dtype  \n",
++      "---  ------                          --------------  -----  \n",
++      " 0   id                              48895 non-null  int64  \n",
++      " 1   name                            48879 non-null  object \n",
++      " 2   host_id                         48895 non-null  int64  \n",
++      " 3   host_name                       48874 non-null  object \n",
++      " 4   neighbourhood_group             48895 non-null  object \n",
++      " 5   neighbourhood                   48895 non-null  object \n",
++      " 6   latitude                        48895 non-null  float64\n",
++      " 7   longitude                       48895 non-null  float64\n",
++      " 8   room_type                       48895 non-null  object \n",
++      " 9   price                           48895 non-null  int64  \n",
++      " 10  minimum_nights                  48895 non-null  int64  \n",
++      " 11  number_of_reviews               48895 non-null  int64  \n",
++      " 12  last_review                     38843 non-null  object \n",
++      " 13  reviews_per_month               38843 non-null  float64\n",
++      " 14  calculated_host_listings_count  48895 non-null  int64  \n",
++      " 15  availability_365                48895 non-null  int64  \n",
++      "dtypes: float64(3), int64(7), object(6)\n",
++      "memory usage: 6.0+ MB\n"
++     ]
++    }
++   ],
++   "source": [
++    "df.info() #to check column datatype and missing values"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 9,
++   "metadata": {},
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "id                                    0\n",
++       "name                                 16\n",
++       "host_id                               0\n",
++       "host_name                            21\n",
++       "neighbourhood_group                   0\n",
++       "neighbourhood                         0\n",
++       "latitude                              0\n",
++       "longitude                             0\n",
++       "room_type                             0\n",
++       "price                                 0\n",
++       "minimum_nights                        0\n",
++       "number_of_reviews                     0\n",
++       "last_review                       10052\n",
++       "reviews_per_month                 10052\n",
++       "calculated_host_listings_count        0\n",
++       "availability_365                      0\n",
++       "dtype: int64"
++      ]
++     },
++     "execution_count": 9,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "df.isnull().sum() #number of missing values in each column"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 8,
++   "metadata": {},
+    "outputs": [
+     {
+      "data": {
+       "text/html": [
+-       "<br/>Waiting for W&B process to finish, PID 34177<br/>Program ended successfully."
++       "<div>\n",
++       "<style scoped>\n",
++       "    .dataframe tbody tr th:only-of-type {\n",
++       "        vertical-align: middle;\n",
++       "    }\n",
++       "\n",
++       "    .dataframe tbody tr th {\n",
++       "        vertical-align: top;\n",
++       "    }\n",
++       "\n",
++       "    .dataframe thead th {\n",
++       "        text-align: right;\n",
++       "    }\n",
++       "</style>\n",
++       "<table border=\"1\" class=\"dataframe\">\n",
++       "  <thead>\n",
++       "    <tr style=\"text-align: right;\">\n",
++       "      <th></th>\n",
++       "      <th>count</th>\n",
++       "      <th>mean</th>\n",
++       "      <th>std</th>\n",
++       "      <th>min</th>\n",
++       "      <th>25%</th>\n",
++       "      <th>50%</th>\n",
++       "      <th>75%</th>\n",
++       "      <th>max</th>\n",
++       "    </tr>\n",
++       "  </thead>\n",
++       "  <tbody>\n",
++       "    <tr>\n",
++       "      <th>id</th>\n",
++       "      <td>48895.0</td>\n",
++       "      <td>1.901714e+07</td>\n",
++       "      <td>1.098311e+07</td>\n",
++       "      <td>2539.00000</td>\n",
++       "      <td>9.471945e+06</td>\n",
++       "      <td>1.967728e+07</td>\n",
++       "      <td>2.915218e+07</td>\n",
++       "      <td>3.648724e+07</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>host_id</th>\n",
++       "      <td>48895.0</td>\n",
++       "      <td>6.762001e+07</td>\n",
++       "      <td>7.861097e+07</td>\n",
++       "      <td>2438.00000</td>\n",
++       "      <td>7.822033e+06</td>\n",
++       "      <td>3.079382e+07</td>\n",
++       "      <td>1.074344e+08</td>\n",
++       "      <td>2.743213e+08</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>latitude</th>\n",
++       "      <td>48895.0</td>\n",
++       "      <td>4.072895e+01</td>\n",
++       "      <td>5.453008e-02</td>\n",
++       "      <td>40.49979</td>\n",
++       "      <td>4.069010e+01</td>\n",
++       "      <td>4.072307e+01</td>\n",
++       "      <td>4.076311e+01</td>\n",
++       "      <td>4.091306e+01</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>longitude</th>\n",
++       "      <td>48895.0</td>\n",
++       "      <td>-7.395217e+01</td>\n",
++       "      <td>4.615674e-02</td>\n",
++       "      <td>-74.24442</td>\n",
++       "      <td>-7.398307e+01</td>\n",
++       "      <td>-7.395568e+01</td>\n",
++       "      <td>-7.393627e+01</td>\n",
++       "      <td>-7.371299e+01</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>price</th>\n",
++       "      <td>48895.0</td>\n",
++       "      <td>1.527207e+02</td>\n",
++       "      <td>2.401542e+02</td>\n",
++       "      <td>0.00000</td>\n",
++       "      <td>6.900000e+01</td>\n",
++       "      <td>1.060000e+02</td>\n",
++       "      <td>1.750000e+02</td>\n",
++       "      <td>1.000000e+04</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>minimum_nights</th>\n",
++       "      <td>48895.0</td>\n",
++       "      <td>7.029962e+00</td>\n",
++       "      <td>2.051055e+01</td>\n",
++       "      <td>1.00000</td>\n",
++       "      <td>1.000000e+00</td>\n",
++       "      <td>3.000000e+00</td>\n",
++       "      <td>5.000000e+00</td>\n",
++       "      <td>1.250000e+03</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>number_of_reviews</th>\n",
++       "      <td>48895.0</td>\n",
++       "      <td>2.327447e+01</td>\n",
++       "      <td>4.455058e+01</td>\n",
++       "      <td>0.00000</td>\n",
++       "      <td>1.000000e+00</td>\n",
++       "      <td>5.000000e+00</td>\n",
++       "      <td>2.400000e+01</td>\n",
++       "      <td>6.290000e+02</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>reviews_per_month</th>\n",
++       "      <td>38843.0</td>\n",
++       "      <td>1.373221e+00</td>\n",
++       "      <td>1.680442e+00</td>\n",
++       "      <td>0.01000</td>\n",
++       "      <td>1.900000e-01</td>\n",
++       "      <td>7.200000e-01</td>\n",
++       "      <td>2.020000e+00</td>\n",
++       "      <td>5.850000e+01</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>calculated_host_listings_count</th>\n",
++       "      <td>48895.0</td>\n",
++       "      <td>7.143982e+00</td>\n",
++       "      <td>3.295252e+01</td>\n",
++       "      <td>1.00000</td>\n",
++       "      <td>1.000000e+00</td>\n",
++       "      <td>1.000000e+00</td>\n",
++       "      <td>2.000000e+00</td>\n",
++       "      <td>3.270000e+02</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>availability_365</th>\n",
++       "      <td>48895.0</td>\n",
++       "      <td>1.127813e+02</td>\n",
++       "      <td>1.316223e+02</td>\n",
++       "      <td>0.00000</td>\n",
++       "      <td>0.000000e+00</td>\n",
++       "      <td>4.500000e+01</td>\n",
++       "      <td>2.270000e+02</td>\n",
++       "      <td>3.650000e+02</td>\n",
++       "    </tr>\n",
++       "  </tbody>\n",
++       "</table>\n",
++       "</div>"
+       ],
+       "text/plain": [
+-       "<IPython.core.display.HTML object>"
++       "                                  count          mean           std  \\\n",
++       "id                              48895.0  1.901714e+07  1.098311e+07   \n",
++       "host_id                         48895.0  6.762001e+07  7.861097e+07   \n",
++       "latitude                        48895.0  4.072895e+01  5.453008e-02   \n",
++       "longitude                       48895.0 -7.395217e+01  4.615674e-02   \n",
++       "price                           48895.0  1.527207e+02  2.401542e+02   \n",
++       "minimum_nights                  48895.0  7.029962e+00  2.051055e+01   \n",
++       "number_of_reviews               48895.0  2.327447e+01  4.455058e+01   \n",
++       "reviews_per_month               38843.0  1.373221e+00  1.680442e+00   \n",
++       "calculated_host_listings_count  48895.0  7.143982e+00  3.295252e+01   \n",
++       "availability_365                48895.0  1.127813e+02  1.316223e+02   \n",
++       "\n",
++       "                                       min           25%           50%  \\\n",
++       "id                              2539.00000  9.471945e+06  1.967728e+07   \n",
++       "host_id                         2438.00000  7.822033e+06  3.079382e+07   \n",
++       "latitude                          40.49979  4.069010e+01  4.072307e+01   \n",
++       "longitude                        -74.24442 -7.398307e+01 -7.395568e+01   \n",
++       "price                              0.00000  6.900000e+01  1.060000e+02   \n",
++       "minimum_nights                     1.00000  1.000000e+00  3.000000e+00   \n",
++       "number_of_reviews                  0.00000  1.000000e+00  5.000000e+00   \n",
++       "reviews_per_month                  0.01000  1.900000e-01  7.200000e-01   \n",
++       "calculated_host_listings_count     1.00000  1.000000e+00  1.000000e+00   \n",
++       "availability_365                   0.00000  0.000000e+00  4.500000e+01   \n",
++       "\n",
++       "                                         75%           max  \n",
++       "id                              2.915218e+07  3.648724e+07  \n",
++       "host_id                         1.074344e+08  2.743213e+08  \n",
++       "latitude                        4.076311e+01  4.091306e+01  \n",
++       "longitude                      -7.393627e+01 -7.371299e+01  \n",
++       "price                           1.750000e+02  1.000000e+04  \n",
++       "minimum_nights                  5.000000e+00  1.250000e+03  \n",
++       "number_of_reviews               2.400000e+01  6.290000e+02  \n",
++       "reviews_per_month               2.020000e+00  5.850000e+01  \n",
++       "calculated_host_listings_count  2.000000e+00  3.270000e+02  \n",
++       "availability_365                2.270000e+02  3.650000e+02  "
+       ]
+      },
++     "execution_count": 8,
+      "metadata": {},
+-     "output_type": "display_data"
+-    },
++     "output_type": "execute_result"
++    }
++   ],
++   "source": [
++    "df.describe().T #statistical summary of columns"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "Observations:\n",
++    "- last_review and reviews_per_month have significant missing values\n",
++    "- price has significant outliers\n",
++    "- last_review has object datatype. needs to be changed to a proper datetime datatype"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "#### Dropping price outliers"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 10,
++   "metadata": {
++    "azdata_cell_guid": "4ec31603-d5a3-4172-85ac-deb03266ea2b",
++    "language": "python"
++   },
++   "outputs": [],
++   "source": [
++    "min_price = 10\n",
++    "max_price = 350\n",
++    "idx = df['price'].between(min_price, max_price)\n",
++    "df = df[idx].copy()"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "#### Converting last_review to datetime"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 11,
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "df['last_review'] = pd.to_datetime(df['last_review'])"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {
++    "azdata_cell_guid": "c48d22a5-2254-40b9-be83-deb25de3c76d",
++    "language": "python"
++   },
++   "source": [
++    "#### Ending run and syncing with wand"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 12,
++   "metadata": {
++    "azdata_cell_guid": "47c6b5df-3500-4205-983b-a4ed378114a8",
++    "language": "python"
++   },
++   "outputs": [
+     {
+      "data": {
+-      "application/vnd.jupyter.widget-view+json": {
+-       "model_id": "",
+-       "version_major": 2,
+-       "version_minor": 0
+-      },
++      "text/html": [
++       "<br/>Waiting for W&B process to finish, PID 1529<br/>Program ended successfully."
++      ],
+       "text/plain": [
+-       "VBox(children=(Label(value=' 0.09MB of 0.09MB uploaded (0.02MB deduped)\\r'), FloatProgress(value=1.0, max=1.0)…"
++       "<IPython.core.display.HTML object>"
+       ]
+      },
+      "metadata": {},
+@@ -432,7 +653,7 @@
+     {
+      "data": {
+       "text/html": [
+-       "Find user logs for this run at: <code>/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/eda/wandb/run-20230827_133757-351toebh/logs/debug.log</code>"
++       "Find user logs for this run at: <code>/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/eda/wandb/run-20230828_120804-1uncjo3v/logs/debug.log</code>"
+       ],
+       "text/plain": [
+        "<IPython.core.display.HTML object>"
+@@ -444,7 +665,7 @@
+     {
+      "data": {
+       "text/html": [
+-       "Find internal logs for this run at: <code>/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/eda/wandb/run-20230827_133757-351toebh/logs/debug-internal.log</code>"
++       "Find internal logs for this run at: <code>/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/eda/wandb/run-20230828_120804-1uncjo3v/logs/debug-internal.log</code>"
+       ],
+       "text/plain": [
+        "<IPython.core.display.HTML object>"
+@@ -456,7 +677,7 @@
+     {
+      "data": {
+       "text/html": [
+-       "Synced 7 W&B file(s), 0 media file(s), 2 artifact file(s) and 1 other file(s)"
++       "Synced 7 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)"
+       ],
+       "text/plain": [
+        "<IPython.core.display.HTML object>"
+@@ -469,7 +690,7 @@
+      "data": {
+       "text/html": [
+        "\n",
+-       "                    <br/>Synced <strong style=\"color:#cdcd00\">hardy-sky-7</strong>: <a href=\"https://wandb.ai/f3bolarinwa/MLOps_nyc_airbnb/runs/351toebh\" target=\"_blank\">https://wandb.ai/f3bolarinwa/MLOps_nyc_airbnb/runs/351toebh</a><br/>\n",
++       "                    <br/>Synced <strong style=\"color:#cdcd00\">deft-glitter-166</strong>: <a href=\"https://wandb.ai/f3bolarinwa/MLOps_nyc_airbnb/runs/1uncjo3v\" target=\"_blank\">https://wandb.ai/f3bolarinwa/MLOps_nyc_airbnb/runs/1uncjo3v</a><br/>\n",
+        "                "
+       ],
+       "text/plain": [
+@@ -487,17 +708,14 @@
+   {
+    "cell_type": "code",
+    "execution_count": null,
+-   "metadata": {
+-    "azdata_cell_guid": "c48d22a5-2254-40b9-be83-deb25de3c76d",
+-    "language": "python"
+-   },
++   "metadata": {},
+    "outputs": [],
+    "source": []
+   }
+  ],
+  "metadata": {
+   "kernelspec": {
+-   "display_name": "Python 3 (ipykernel)",
++   "display_name": "Python 3",
+    "language": "python",
+    "name": "python3"
+   },

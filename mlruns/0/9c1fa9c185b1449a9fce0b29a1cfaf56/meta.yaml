@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/femibolarinwa_comp/Downloads/Udacity/MLOps%20Engineer/2-Building%20a%20Reproducible%20Model%20Workflow/MLOps_project_ml_pipeline/mlruns/0/9c1fa9c185b1449a9fce0b29a1cfaf56/artifacts
+end_time: 1693242386386
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9c1fa9c185b1449a9fce0b29a1cfaf56
+run_name: thoughtful-yak-2
+run_uuid: 9c1fa9c185b1449a9fce0b29a1cfaf56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693242369968
+status: 3
+tags: []
+user_id: femibolarinwa_comp

@@ -1,0 +1,21 @@
+2023-08-24 22:05:54,494 Downloading artifact
+2023-08-24 22:05:55,386 reading artifact
+2023-08-24 22:05:55,438 cleaning artifact
+Traceback (most recent call last):
+  File "/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/run.py", line 111, in <module>
+    go(args)
+  File "/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/run.py", line 44, in go
+    idx = df['price'].between(args.min_price, args.max_price)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-58bed6a11e54e743d925c334c1b834b86cf05749/lib/python3.9/site-packages/pandas/core/series.py", line 4737, in between
+    lmask = self >= left
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-58bed6a11e54e743d925c334c1b834b86cf05749/lib/python3.9/site-packages/pandas/core/ops/common.py", line 65, in new_method
+    return method(self, other)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-58bed6a11e54e743d925c334c1b834b86cf05749/lib/python3.9/site-packages/pandas/core/arraylike.py", line 49, in __ge__
+    return self._cmp_method(other, operator.ge)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-58bed6a11e54e743d925c334c1b834b86cf05749/lib/python3.9/site-packages/pandas/core/series.py", line 4978, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-58bed6a11e54e743d925c334c1b834b86cf05749/lib/python3.9/site-packages/pandas/core/ops/array_ops.py", line 240, in comparison_op
+    return invalid_comparison(lvalues, rvalues, op)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-58bed6a11e54e743d925c334c1b834b86cf05749/lib/python3.9/site-packages/pandas/core/ops/invalid.py", line 34, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=int64 and str

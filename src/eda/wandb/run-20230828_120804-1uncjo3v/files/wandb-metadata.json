@@ -1,0 +1,24 @@
+{
+    "os": "macOS-13.4-arm64-i386-64bit",
+    "python": "3.9.15",
+    "heartbeatAt": "2023-08-28T16:08:05.242859",
+    "startedAt": "2023-08-28T16:08:04.208471",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/Users/femibolarinwa_comp/Library/Jupyter/runtime/kernel-b1738711-be1f-45b0-9251-6d302f43e43a.json"
+    ],
+    "state": "running",
+    "program": "Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/eda/EDA.ipynb",
+    "root": "/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices",
+    "git": {
+        "remote": "https://github.com/f3bolarinwa/build-ml-pipeline-for-short-term-rental-prices.git",
+        "commit": "d7cf0094c2248cd6f0b8e50a85ba541e1fcaea30"
+    },
+    "email": "f3bolarinwa@yahoo.com",
+    "host": "Femis-MacBook-Air.local",
+    "username": "femibolarinwa_comp",
+    "executable": "/Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/bin/python"
+}

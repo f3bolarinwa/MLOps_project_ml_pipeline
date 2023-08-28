@@ -1,0 +1,541 @@
+2023-08-24 22:33:55,799 INFO    MainThread:68430 [internal.py:wandb_internal():88] W&B internal server running at pid: 68430, started at: 2023-08-24 22:33:55.799300
+2023-08-24 22:33:55,800 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: check_version
+2023-08-24 22:33:55,800 INFO    WriterThread:68430 [datastore.py:open_for_write():77] open: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/run-2dd27xhz.wandb
+2023-08-24 22:33:55,800 DEBUG   SenderThread:68430 [sender.py:send():179] send: header
+2023-08-24 22:33:55,800 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: check_version
+2023-08-24 22:33:55,955 DEBUG   SenderThread:68430 [sender.py:send():179] send: run
+2023-08-24 22:34:14,653 INFO    SenderThread:68430 [dir_watcher.py:__init__():168] watching files in: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files
+2023-08-24 22:34:14,653 INFO    SenderThread:68430 [sender.py:_start_run_threads():704] run started: 2dd27xhz with start time 1692930835
+2023-08-24 22:34:14,659 DEBUG   SenderThread:68430 [sender.py:send():179] send: summary
+2023-08-24 22:34:14,660 INFO    SenderThread:68430 [sender.py:_save_file():829] saving file wandb-summary.json with policy end
+2023-08-24 22:34:14,667 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: run_start
+2023-08-24 22:34:14,673 DEBUG   HandlerThread:68430 [meta.py:__init__():39] meta init
+2023-08-24 22:34:14,673 DEBUG   HandlerThread:68430 [meta.py:__init__():53] meta init done
+2023-08-24 22:34:14,673 DEBUG   HandlerThread:68430 [meta.py:probe():210] probe
+2023-08-24 22:34:14,678 DEBUG   HandlerThread:68430 [meta.py:_setup_git():200] setup git
+2023-08-24 22:34:14,704 DEBUG   HandlerThread:68430 [meta.py:_setup_git():207] setup git done
+2023-08-24 22:34:14,704 DEBUG   HandlerThread:68430 [meta.py:_save_pip():57] save pip
+2023-08-24 22:34:14,705 DEBUG   HandlerThread:68430 [meta.py:_save_pip():71] save pip done
+2023-08-24 22:34:14,705 DEBUG   HandlerThread:68430 [meta.py:_save_conda():78] save conda
+2023-08-24 22:34:15,659 INFO    Thread-8  :68430 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/wandb-summary.json
+2023-08-24 22:34:15,660 INFO    Thread-8  :68430 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/requirements.txt
+2023-08-24 22:34:15,660 INFO    Thread-8  :68430 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/conda-environment.yaml
+2023-08-24 22:34:15,970 DEBUG   HandlerThread:68430 [meta.py:_save_conda():86] save conda done
+2023-08-24 22:34:15,970 DEBUG   HandlerThread:68430 [meta.py:probe():252] probe done
+2023-08-24 22:34:15,972 DEBUG   SenderThread:68430 [sender.py:send():179] send: telemetry
+2023-08-24 22:34:15,973 DEBUG   SenderThread:68430 [sender.py:send():179] send: files
+2023-08-24 22:34:15,973 INFO    SenderThread:68430 [sender.py:_save_file():829] saving file wandb-metadata.json with policy now
+2023-08-24 22:34:15,975 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: stop_status
+2023-08-24 22:34:15,975 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: stop_status
+2023-08-24 22:34:16,664 INFO    Thread-8  :68430 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/conda-environment.yaml
+2023-08-24 22:34:16,664 INFO    Thread-8  :68430 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/output.log
+2023-08-24 22:34:16,664 INFO    Thread-8  :68430 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/wandb-metadata.json
+2023-08-24 22:34:18,673 INFO    Thread-8  :68430 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/output.log
+2023-08-24 22:34:21,904 WARNING FileStreamThread:68430 [file_stream.py:request_with_retry():429] requests_with_retry encountered retryable exception: 500 Server Error: Internal Server Error for url: https://api.wandb.ai/files/f3bolarinwa/nyc_airbnb/2dd27xhz/file_stream. func: <bound method Session.post of <requests.sessions.Session object at 0x11915d1f0>>, args: ('https://api.wandb.ai/files/f3bolarinwa/nyc_airbnb/2dd27xhz/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{}']}}}}
+2023-08-24 22:34:37,192 ERROR   Thread-11 :68430 [retry.py:__call__():126] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/http/client.py", line 1377, in getresponse
+    response.begin()
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/http/client.py", line 281, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/ssl.py", line 1242, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/ssl.py", line 1100, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/util/retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/connectionpool.py", line 538, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/connectionpool.py", line 370, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 127, in execute
+    return self.client.execute(*args, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+2023-08-24 22:34:37,254 ERROR   SenderThread:68430 [retry.py:__call__():126] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/http/client.py", line 1377, in getresponse
+    response.begin()
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/http/client.py", line 281, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/ssl.py", line 1242, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/ssl.py", line 1100, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/util/retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/connectionpool.py", line 538, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/urllib3/connectionpool.py", line 370, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 127, in execute
+    return self.client.execute(*args, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-1d76e6d7f4d8348ef4f6ec73fedabbe4f91af82a/lib/python3.9/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+2023-08-24 22:34:48,747 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:34:48,795 INFO    Thread-8  :68430 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/output.log
+2023-08-24 22:34:52,249 WARNING FileStreamThread:68430 [file_stream.py:request_with_retry():429] requests_with_retry encountered retryable exception: 500 Server Error: Internal Server Error for url: https://api.wandb.ai/files/f3bolarinwa/nyc_airbnb/2dd27xhz/file_stream. func: <bound method Session.post of <requests.sessions.Session object at 0x11915d1f0>>, args: ('https://api.wandb.ai/files/f3bolarinwa/nyc_airbnb/2dd27xhz/file_stream',), kwargs: {'json': {'complete': False, 'failed': False}}
+2023-08-24 22:34:53,859 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:34:58,964 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:35:04,073 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:35:09,182 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:35:14,295 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:35:19,403 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:35:24,519 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:35:29,625 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:35:34,735 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:35:39,843 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:35:44,948 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:35:50,055 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:35:55,162 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:36:00,273 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:36:05,382 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:36:10,492 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:36:15,599 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:36:20,709 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:36:25,812 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:36:30,919 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:36:33,515 WARNING FileStreamThread:68430 [file_stream.py:request_with_retry():429] requests_with_retry encountered retryable exception: 500 Server Error: Internal Server Error for url: https://api.wandb.ai/files/f3bolarinwa/nyc_airbnb/2dd27xhz/file_stream. func: <bound method Session.post of <requests.sessions.Session object at 0x11915d1f0>>, args: ('https://api.wandb.ai/files/f3bolarinwa/nyc_airbnb/2dd27xhz/file_stream',), kwargs: {'json': {'complete': False, 'failed': False}}
+2023-08-24 22:36:36,033 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:36:41,135 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:36:46,245 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:36:51,351 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:36:56,461 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:37:01,563 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:37:06,670 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:37:11,779 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:37:16,890 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:37:22,000 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:37:27,110 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:37:32,216 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:37:37,322 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:37:42,433 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:37:47,536 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:37:52,646 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:37:57,753 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:38:02,866 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:38:07,975 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:38:13,085 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:38:18,194 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:38:23,302 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:38:28,414 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:38:33,524 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:38:38,631 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:38:43,739 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:38:48,841 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:38:53,953 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:38:59,058 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:39:02,207 WARNING FileStreamThread:68430 [file_stream.py:request_with_retry():429] requests_with_retry encountered retryable exception: 500 Server Error: Internal Server Error for url: https://api.wandb.ai/files/f3bolarinwa/nyc_airbnb/2dd27xhz/file_stream. func: <bound method Session.post of <requests.sessions.Session object at 0x11915d1f0>>, args: ('https://api.wandb.ai/files/f3bolarinwa/nyc_airbnb/2dd27xhz/file_stream',), kwargs: {'json': {'complete': False, 'failed': False}}
+2023-08-24 22:39:04,164 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:39:09,272 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:39:14,382 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:39:19,491 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:39:24,602 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:39:29,705 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:39:34,812 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:39:39,919 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:39:45,029 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:39:50,133 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:39:55,244 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:40:00,352 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:40:05,462 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:40:10,574 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:40:15,677 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:40:20,791 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:40:25,900 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:40:31,022 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:40:36,117 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:40:41,223 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:40:46,335 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:40:51,444 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:40:56,555 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:41:01,663 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:41:06,771 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:41:11,882 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:41:16,988 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:41:22,096 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:41:27,205 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:41:32,311 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:41:37,420 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:41:42,531 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:41:47,642 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:41:52,747 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:41:57,862 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:42:02,970 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:42:08,076 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:42:13,187 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:42:18,293 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:42:23,398 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:42:28,503 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:42:33,177 WARNING FileStreamThread:68430 [file_stream.py:request_with_retry():429] requests_with_retry encountered retryable exception: 500 Server Error: Internal Server Error for url: https://api.wandb.ai/files/f3bolarinwa/nyc_airbnb/2dd27xhz/file_stream. func: <bound method Session.post of <requests.sessions.Session object at 0x11915d1f0>>, args: ('https://api.wandb.ai/files/f3bolarinwa/nyc_airbnb/2dd27xhz/file_stream',), kwargs: {'json': {'complete': False, 'failed': False}}
+2023-08-24 22:42:33,612 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:42:38,724 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:42:43,830 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:42:48,936 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:42:54,043 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:42:59,152 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:43:04,257 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:43:09,364 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:43:14,471 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:43:19,577 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:43:24,688 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:43:29,799 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:43:34,910 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:43:40,021 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:43:45,129 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:43:50,238 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:43:55,351 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:44:00,462 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:44:05,629 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:44:10,741 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:44:15,851 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:44:20,960 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:44:26,067 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:44:31,172 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:44:36,280 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:44:41,391 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:44:46,502 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:44:51,610 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:44:56,721 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:01,831 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:06,942 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:12,052 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:17,162 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:22,270 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:27,382 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:30,729 INFO    Thread-11 :68430 [upload_job.py:push():133] Uploaded file /var/folders/hg/4w5qntdd3xl81j7pjn9pd1fh0000gn/T/tmp8r0qwx3xwandb/33y6zzpe-wandb-metadata.json
+2023-08-24 22:45:31,017 DEBUG   SenderThread:68430 [sender.py:send():179] send: config
+2023-08-24 22:45:31,018 DEBUG   SenderThread:68430 [sender.py:send():179] send: telemetry
+2023-08-24 22:45:31,019 DEBUG   SenderThread:68430 [sender.py:send():179] send: exit
+2023-08-24 22:45:31,019 INFO    SenderThread:68430 [sender.py:send_exit():287] handling exit code: 1
+2023-08-24 22:45:31,019 INFO    SenderThread:68430 [sender.py:send_exit():295] send defer
+2023-08-24 22:45:31,019 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,020 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,020 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: defer
+2023-08-24 22:45:31,020 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,021 INFO    HandlerThread:68430 [handler.py:handle_request_defer():141] handle defer: 0
+2023-08-24 22:45:31,021 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,022 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,022 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,023 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,023 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,023 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,023 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,024 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,024 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,024 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,024 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,025 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,025 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,025 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,025 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,025 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,026 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,026 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,026 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,026 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,026 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,026 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,027 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,027 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,027 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,027 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,027 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,027 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,028 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,028 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,028 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,028 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,028 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,028 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,029 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,029 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,029 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,029 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,029 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,029 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,030 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,030 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,030 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,030 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,030 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,030 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,031 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,031 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,031 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,031 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,031 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,032 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,032 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,032 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,032 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,032 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,032 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,032 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,033 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,033 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,033 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,033 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,033 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,033 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,034 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,034 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,034 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,034 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,034 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,034 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,034 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,035 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,035 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,035 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,035 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,035 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,035 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,035 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,035 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,036 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,036 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,036 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,036 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,036 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,036 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,036 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,036 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,036 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,036 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,037 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,037 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,037 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,037 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,037 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,038 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,038 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,038 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,038 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,038 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,038 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,038 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,038 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,038 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,038 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,038 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,038 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,039 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,039 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,039 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,039 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,039 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,040 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,040 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,040 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,040 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,040 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,040 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,040 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,040 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,041 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,041 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,041 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,041 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,041 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,041 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,041 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,041 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,041 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,041 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,042 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,042 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,042 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,042 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,042 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,042 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,043 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,043 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,043 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,043 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:31,043 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:31,043 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: defer
+2023-08-24 22:45:31,043 INFO    SenderThread:68430 [sender.py:send_request_defer():304] handle sender defer: 0
+2023-08-24 22:45:31,043 INFO    SenderThread:68430 [sender.py:send_request_defer():342] send defer: 1
+2023-08-24 22:45:31,044 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: defer
+2023-08-24 22:45:31,044 INFO    HandlerThread:68430 [handler.py:handle_request_defer():141] handle defer: 1
+2023-08-24 22:45:31,789 INFO    Thread-8  :68430 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/config.yaml
+2023-08-24 22:45:32,000 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:32,000 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: defer
+2023-08-24 22:45:32,000 INFO    SenderThread:68430 [sender.py:send_request_defer():304] handle sender defer: 1
+2023-08-24 22:45:32,000 INFO    SenderThread:68430 [sender.py:send_request_defer():342] send defer: 2
+2023-08-24 22:45:32,000 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:32,000 DEBUG   SenderThread:68430 [sender.py:send():179] send: stats
+2023-08-24 22:45:32,000 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: defer
+2023-08-24 22:45:32,001 INFO    HandlerThread:68430 [handler.py:handle_request_defer():141] handle defer: 2
+2023-08-24 22:45:32,001 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: defer
+2023-08-24 22:45:32,001 INFO    SenderThread:68430 [sender.py:send_request_defer():304] handle sender defer: 2
+2023-08-24 22:45:32,001 INFO    SenderThread:68430 [sender.py:send_request_defer():342] send defer: 3
+2023-08-24 22:45:32,001 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: defer
+2023-08-24 22:45:32,001 INFO    HandlerThread:68430 [handler.py:handle_request_defer():141] handle defer: 3
+2023-08-24 22:45:32,001 DEBUG   SenderThread:68430 [sender.py:send():179] send: summary
+2023-08-24 22:45:32,001 INFO    SenderThread:68430 [sender.py:_save_file():829] saving file wandb-summary.json with policy end
+2023-08-24 22:45:32,001 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: defer
+2023-08-24 22:45:32,001 INFO    SenderThread:68430 [sender.py:send_request_defer():304] handle sender defer: 3
+2023-08-24 22:45:32,001 INFO    SenderThread:68430 [sender.py:send_request_defer():342] send defer: 4
+2023-08-24 22:45:32,002 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: defer
+2023-08-24 22:45:32,002 INFO    HandlerThread:68430 [handler.py:handle_request_defer():141] handle defer: 4
+2023-08-24 22:45:32,002 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: defer
+2023-08-24 22:45:32,002 INFO    SenderThread:68430 [sender.py:send_request_defer():304] handle sender defer: 4
+2023-08-24 22:45:32,106 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:32,256 INFO    SenderThread:68430 [sender.py:send_request_defer():342] send defer: 5
+2023-08-24 22:45:32,257 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:32,257 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: defer
+2023-08-24 22:45:32,257 INFO    HandlerThread:68430 [handler.py:handle_request_defer():141] handle defer: 5
+2023-08-24 22:45:32,258 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: defer
+2023-08-24 22:45:32,258 INFO    SenderThread:68430 [sender.py:send_request_defer():304] handle sender defer: 5
+2023-08-24 22:45:32,258 INFO    SenderThread:68430 [dir_watcher.py:finish():282] shutting down directory watcher
+2023-08-24 22:45:32,364 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:32,796 INFO    SenderThread:68430 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/wandb-summary.json
+2023-08-24 22:45:32,797 INFO    SenderThread:68430 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/config.yaml
+2023-08-24 22:45:32,798 INFO    SenderThread:68430 [dir_watcher.py:finish():312] scan: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files
+2023-08-24 22:45:32,798 INFO    SenderThread:68430 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/requirements.txt requirements.txt
+2023-08-24 22:45:32,798 INFO    SenderThread:68430 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/output.log output.log
+2023-08-24 22:45:32,803 INFO    SenderThread:68430 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/config.yaml config.yaml
+2023-08-24 22:45:32,807 INFO    SenderThread:68430 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/wandb-summary.json wandb-summary.json
+2023-08-24 22:45:32,808 INFO    SenderThread:68430 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/conda-environment.yaml conda-environment.yaml
+2023-08-24 22:45:32,814 INFO    SenderThread:68430 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/wandb-metadata.json wandb-metadata.json
+2023-08-24 22:45:32,814 INFO    SenderThread:68430 [sender.py:send_request_defer():342] send defer: 6
+2023-08-24 22:45:32,815 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:32,815 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: defer
+2023-08-24 22:45:32,815 INFO    HandlerThread:68430 [handler.py:handle_request_defer():141] handle defer: 6
+2023-08-24 22:45:32,816 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: defer
+2023-08-24 22:45:32,816 INFO    SenderThread:68430 [sender.py:send_request_defer():304] handle sender defer: 6
+2023-08-24 22:45:32,816 INFO    SenderThread:68430 [file_pusher.py:finish():176] shutting down file pusher
+2023-08-24 22:45:32,816 INFO    SenderThread:68430 [sender.py:send_request_defer():342] send defer: 7
+2023-08-24 22:45:32,817 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: defer
+2023-08-24 22:45:32,817 INFO    HandlerThread:68430 [handler.py:handle_request_defer():141] handle defer: 7
+2023-08-24 22:45:32,819 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: defer
+2023-08-24 22:45:32,819 INFO    SenderThread:68430 [sender.py:send_request_defer():304] handle sender defer: 7
+2023-08-24 22:45:32,926 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:33,109 INFO    SenderThread:68430 [sender.py:send_request_defer():342] send defer: 8
+2023-08-24 22:45:33,109 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:33,109 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: defer
+2023-08-24 22:45:33,109 INFO    HandlerThread:68430 [handler.py:handle_request_defer():141] handle defer: 8
+2023-08-24 22:45:33,110 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: defer
+2023-08-24 22:45:33,110 INFO    SenderThread:68430 [sender.py:send_request_defer():304] handle sender defer: 8
+2023-08-24 22:45:33,110 INFO    SenderThread:68430 [sender.py:send_request_defer():342] send defer: 9
+2023-08-24 22:45:33,110 DEBUG   SenderThread:68430 [sender.py:send():179] send: final
+2023-08-24 22:45:33,110 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: defer
+2023-08-24 22:45:33,110 INFO    HandlerThread:68430 [handler.py:handle_request_defer():141] handle defer: 9
+2023-08-24 22:45:33,111 DEBUG   SenderThread:68430 [sender.py:send():179] send: footer
+2023-08-24 22:45:33,111 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: defer
+2023-08-24 22:45:33,111 INFO    SenderThread:68430 [sender.py:send_request_defer():304] handle sender defer: 9
+2023-08-24 22:45:33,221 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:33,221 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:33,305 INFO    Thread-15 :68430 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/wandb-summary.json
+2023-08-24 22:45:33,307 INFO    Thread-12 :68430 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/requirements.txt
+2023-08-24 22:45:33,308 INFO    Thread-14 :68430 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/config.yaml
+2023-08-24 22:45:33,332 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:33,333 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:33,439 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:33,440 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:33,482 INFO    Thread-16 :68430 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/conda-environment.yaml
+2023-08-24 22:45:33,496 INFO    Thread-13 :68430 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/files/output.log
+2023-08-24 22:45:33,555 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:33,556 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:33,670 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:33,671 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:33,778 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-24 22:45:33,778 DEBUG   SenderThread:68430 [sender.py:send_request():193] send_request: poll_exit
+2023-08-24 22:45:33,779 INFO    SenderThread:68430 [file_pusher.py:join():181] waiting for file pusher
+2023-08-24 22:45:33,783 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: get_summary
+2023-08-24 22:45:33,785 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: sampled_history
+2023-08-24 22:45:33,786 DEBUG   HandlerThread:68430 [handler.py:handle_request():124] handle_request: shutdown
+2023-08-24 22:45:33,786 INFO    HandlerThread:68430 [handler.py:finish():638] shutting down handler
+2023-08-24 22:45:34,121 INFO    WriterThread:68430 [datastore.py:close():258] close: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230824_223355-2dd27xhz/run-2dd27xhz.wandb
+2023-08-24 22:45:34,785 INFO    SenderThread:68430 [sender.py:finish():933] shutting down sender
+2023-08-24 22:45:34,785 INFO    SenderThread:68430 [file_pusher.py:finish():176] shutting down file pusher
+2023-08-24 22:45:34,785 INFO    SenderThread:68430 [file_pusher.py:join():181] waiting for file pusher
+2023-08-24 22:45:34,789 INFO    MainThread:68430 [internal.py:handle_exit():78] Internal process exited

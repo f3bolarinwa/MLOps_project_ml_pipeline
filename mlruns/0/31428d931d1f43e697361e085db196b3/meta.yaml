@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/femibolarinwa_comp/Downloads/Udacity/MLOps%20Engineer/2-Building%20a%20Reproducible%20Model%20Workflow/MLOps_project_ml_pipeline/mlruns/0/31428d931d1f43e697361e085db196b3/artifacts
+end_time: 1693243065685
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 31428d931d1f43e697361e085db196b3
+run_name: glamorous-trout-278
+run_uuid: 31428d931d1f43e697361e085db196b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693242967974
+status: 3
+tags: []
+user_id: femibolarinwa_comp

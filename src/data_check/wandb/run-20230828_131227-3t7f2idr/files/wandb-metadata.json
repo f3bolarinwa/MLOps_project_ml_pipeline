@@ -1,0 +1,34 @@
+{
+    "os": "macOS-13.4-arm64-arm-64bit",
+    "python": "3.9.16",
+    "heartbeatAt": "2023-08-28T17:12:28.055372",
+    "startedAt": "2023-08-28T17:12:27.181163",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        ".",
+        "-vv",
+        "--csv",
+        "clean_sample.csv:latest",
+        "--ref",
+        "clean_sample.csv:reference",
+        "--kl_threshold",
+        "0.2",
+        "--min_price",
+        "10",
+        "--max_price",
+        "350"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/f3bolarinwa/MLOps_project_ml_pipeline.git",
+        "commit": "2f523ce136af3818f99855002320e566eb0850a4"
+    },
+    "email": "f3bolarinwa@yahoo.com",
+    "root": "/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline",
+    "host": "Femis-MacBook-Air.local",
+    "username": "femibolarinwa_comp",
+    "executable": "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-d1fd4b13aac386abe6aa5a2ada1ca11214902ce4/bin/python"
+}

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/femibolarinwa_comp/Downloads/Udacity/MLOps%20Engineer/2-Building%20a%20Reproducible%20Model%20Workflow/MLOps_project_ml_pipeline/mlruns/0/aa16cae20d4749349dfebeebb588842b/artifacts
+end_time: 1693242358864
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: aa16cae20d4749349dfebeebb588842b
+run_name: luxuriant-stag-191
+run_uuid: aa16cae20d4749349dfebeebb588842b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693242344451
+status: 3
+tags: []
+user_id: femibolarinwa_comp

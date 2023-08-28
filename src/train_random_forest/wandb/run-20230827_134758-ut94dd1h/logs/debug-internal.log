@@ -1,0 +1,123 @@
+2023-08-27 13:47:58,458 INFO    MainThread:34518 [internal.py:wandb_internal():88] W&B internal server running at pid: 34518, started at: 2023-08-27 13:47:58.458621
+2023-08-27 13:47:58,459 INFO    WriterThread:34518 [datastore.py:open_for_write():77] open: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20230827_134758-ut94dd1h/run-ut94dd1h.wandb
+2023-08-27 13:47:58,459 DEBUG   SenderThread:34518 [sender.py:send():122] send: header
+2023-08-27 13:47:58,459 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: check_version
+2023-08-27 13:47:58,459 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:47:58,459 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: check_version
+2023-08-27 13:47:58,768 DEBUG   SenderThread:34518 [sender.py:send():122] send: run
+2023-08-27 13:47:59,031 INFO    SenderThread:34518 [sender.py:_start_run_threads():596] run started: ut94dd1h with start time 1693158478
+2023-08-27 13:47:59,031 DEBUG   SenderThread:34518 [sender.py:send():122] send: summary
+2023-08-27 13:47:59,032 INFO    SenderThread:34518 [sender.py:_save_file():730] saving file wandb-summary.json with policy end
+2023-08-27 13:47:59,032 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: run_start
+2023-08-27 13:47:59,034 DEBUG   HandlerThread:34518 [meta.py:__init__():34] meta init
+2023-08-27 13:47:59,034 DEBUG   HandlerThread:34518 [meta.py:__init__():48] meta init done
+2023-08-27 13:47:59,034 DEBUG   HandlerThread:34518 [meta.py:probe():190] probe
+2023-08-27 13:47:59,041 DEBUG   HandlerThread:34518 [meta.py:_setup_git():180] setup git
+2023-08-27 13:47:59,064 DEBUG   HandlerThread:34518 [meta.py:_setup_git():187] setup git done
+2023-08-27 13:47:59,064 DEBUG   HandlerThread:34518 [meta.py:_save_pip():52] save pip
+2023-08-27 13:47:59,065 DEBUG   HandlerThread:34518 [meta.py:_save_pip():66] save pip done
+2023-08-27 13:47:59,065 DEBUG   HandlerThread:34518 [meta.py:probe():231] probe done
+2023-08-27 13:47:59,068 DEBUG   SenderThread:34518 [sender.py:send():122] send: files
+2023-08-27 13:47:59,068 INFO    SenderThread:34518 [sender.py:_save_file():730] saving file wandb-metadata.json with policy now
+2023-08-27 13:47:59,071 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: status
+2023-08-27 13:47:59,071 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:47:59,071 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: status
+2023-08-27 13:47:59,315 DEBUG   SenderThread:34518 [sender.py:send():122] send: config
+2023-08-27 13:47:59,499 DEBUG   SenderThread:34518 [sender.py:send():122] send: config
+2023-08-27 13:47:59,679 DEBUG   SenderThread:34518 [sender.py:send():122] send: telemetry
+2023-08-27 13:48:05,063 DEBUG   SenderThread:34518 [sender.py:send():122] send: stats
+2023-08-27 13:48:12,128 DEBUG   SenderThread:34518 [sender.py:send():122] send: stats
+2023-08-27 13:48:14,321 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: status
+2023-08-27 13:48:14,321 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:48:14,321 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: status
+2023-08-27 13:48:19,102 DEBUG   SenderThread:34518 [sender.py:send():122] send: stats
+2023-08-27 13:48:20,380 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: log_artifact
+2023-08-27 13:48:20,380 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:48:20,380 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: log_artifact
+2023-08-27 13:48:20,598 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: poll_exit
+2023-08-27 13:48:22,395 DEBUG   SenderThread:34518 [sender.py:send():122] send: summary
+2023-08-27 13:48:22,396 INFO    SenderThread:34518 [sender.py:_save_file():730] saving file wandb-summary.json with policy end
+2023-08-27 13:48:22,396 DEBUG   SenderThread:34518 [sender.py:send():122] send: summary
+2023-08-27 13:48:22,396 INFO    SenderThread:34518 [sender.py:_save_file():730] saving file wandb-summary.json with policy end
+2023-08-27 13:48:22,396 DEBUG   SenderThread:34518 [sender.py:send():122] send: files
+2023-08-27 13:48:22,396 INFO    SenderThread:34518 [sender.py:_save_file():730] saving file media/images/feature_importance_0_6fd48545.png with policy now
+2023-08-27 13:48:22,397 DEBUG   SenderThread:34518 [sender.py:send():122] send: history
+2023-08-27 13:48:22,397 DEBUG   SenderThread:34518 [sender.py:send():122] send: summary
+2023-08-27 13:48:22,397 INFO    SenderThread:34518 [sender.py:_save_file():730] saving file wandb-summary.json with policy end
+2023-08-27 13:48:22,397 DEBUG   SenderThread:34518 [sender.py:send():122] send: telemetry
+2023-08-27 13:48:22,567 DEBUG   SenderThread:34518 [sender.py:send():122] send: exit
+2023-08-27 13:48:22,567 INFO    SenderThread:34518 [sender.py:send_exit():200] handling exit code: 0
+2023-08-27 13:48:22,567 INFO    SenderThread:34518 [sender.py:send_exit():208] send defer
+2023-08-27 13:48:22,567 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:48:22,567 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: poll_exit
+2023-08-27 13:48:22,567 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: defer
+2023-08-27 13:48:22,568 INFO    HandlerThread:34518 [handler.py:handle_request_defer():115] handle defer: 0
+2023-08-27 13:48:22,568 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:48:22,569 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: defer
+2023-08-27 13:48:22,569 INFO    SenderThread:34518 [sender.py:send_request_defer():217] handle sender defer: 0
+2023-08-27 13:48:22,569 INFO    SenderThread:34518 [sender.py:send_request_defer():253] send defer: 1
+2023-08-27 13:48:22,569 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: defer
+2023-08-27 13:48:22,569 INFO    HandlerThread:34518 [handler.py:handle_request_defer():115] handle defer: 1
+2023-08-27 13:48:23,188 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:48:23,188 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: defer
+2023-08-27 13:48:23,188 INFO    SenderThread:34518 [sender.py:send_request_defer():217] handle sender defer: 1
+2023-08-27 13:48:23,188 INFO    SenderThread:34518 [sender.py:send_request_defer():253] send defer: 2
+2023-08-27 13:48:23,188 DEBUG   SenderThread:34518 [sender.py:send():122] send: stats
+2023-08-27 13:48:23,188 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: defer
+2023-08-27 13:48:23,188 INFO    HandlerThread:34518 [handler.py:handle_request_defer():115] handle defer: 2
+2023-08-27 13:48:23,188 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:48:23,188 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: defer
+2023-08-27 13:48:23,188 INFO    SenderThread:34518 [sender.py:send_request_defer():217] handle sender defer: 2
+2023-08-27 13:48:23,188 INFO    SenderThread:34518 [sender.py:send_request_defer():253] send defer: 3
+2023-08-27 13:48:23,188 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: defer
+2023-08-27 13:48:23,188 INFO    HandlerThread:34518 [handler.py:handle_request_defer():115] handle defer: 3
+2023-08-27 13:48:23,189 DEBUG   SenderThread:34518 [sender.py:send():122] send: summary
+2023-08-27 13:48:23,189 INFO    SenderThread:34518 [sender.py:_save_file():730] saving file wandb-summary.json with policy end
+2023-08-27 13:48:23,189 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:48:23,189 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: defer
+2023-08-27 13:48:23,189 INFO    SenderThread:34518 [sender.py:send_request_defer():217] handle sender defer: 3
+2023-08-27 13:48:23,189 INFO    SenderThread:34518 [sender.py:send_request_defer():253] send defer: 4
+2023-08-27 13:48:23,189 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: defer
+2023-08-27 13:48:23,189 INFO    HandlerThread:34518 [handler.py:handle_request_defer():115] handle defer: 4
+2023-08-27 13:48:23,189 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:48:23,189 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: defer
+2023-08-27 13:48:23,189 INFO    SenderThread:34518 [sender.py:send_request_defer():217] handle sender defer: 4
+2023-08-27 13:48:24,184 INFO    SenderThread:34518 [sender.py:send_request_defer():253] send defer: 5
+2023-08-27 13:48:24,185 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: defer
+2023-08-27 13:48:24,185 INFO    HandlerThread:34518 [handler.py:handle_request_defer():115] handle defer: 5
+2023-08-27 13:48:24,185 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:48:24,185 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: defer
+2023-08-27 13:48:24,185 INFO    SenderThread:34518 [sender.py:send_request_defer():217] handle sender defer: 5
+2023-08-27 13:48:24,185 INFO    SenderThread:34518 [sender.py:send_request_defer():253] send defer: 6
+2023-08-27 13:48:24,185 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: defer
+2023-08-27 13:48:24,185 INFO    HandlerThread:34518 [handler.py:handle_request_defer():115] handle defer: 6
+2023-08-27 13:48:24,186 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:48:24,186 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: defer
+2023-08-27 13:48:24,186 INFO    SenderThread:34518 [sender.py:send_request_defer():217] handle sender defer: 6
+2023-08-27 13:48:24,381 INFO    SenderThread:34518 [sender.py:send_request_defer():253] send defer: 7
+2023-08-27 13:48:24,382 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: defer
+2023-08-27 13:48:24,382 INFO    HandlerThread:34518 [handler.py:handle_request_defer():115] handle defer: 7
+2023-08-27 13:48:24,383 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:48:24,383 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: defer
+2023-08-27 13:48:24,383 INFO    SenderThread:34518 [sender.py:send_request_defer():217] handle sender defer: 7
+2023-08-27 13:48:24,383 INFO    SenderThread:34518 [sender.py:send_request_defer():253] send defer: 8
+2023-08-27 13:48:24,383 DEBUG   SenderThread:34518 [sender.py:send():122] send: final
+2023-08-27 13:48:24,384 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: defer
+2023-08-27 13:48:24,384 DEBUG   SenderThread:34518 [sender.py:send():122] send: footer
+2023-08-27 13:48:24,384 INFO    HandlerThread:34518 [handler.py:handle_request_defer():115] handle defer: 8
+2023-08-27 13:48:24,384 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:48:24,384 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: defer
+2023-08-27 13:48:24,384 INFO    SenderThread:34518 [sender.py:send_request_defer():217] handle sender defer: 8
+2023-08-27 13:48:24,570 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: poll_exit
+2023-08-27 13:48:24,570 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:48:24,570 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: poll_exit
+2023-08-27 13:48:26,573 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: poll_exit
+2023-08-27 13:48:26,574 DEBUG   SenderThread:34518 [sender.py:send():122] send: request
+2023-08-27 13:48:26,575 DEBUG   SenderThread:34518 [sender.py:send_request():131] send_request: poll_exit
+2023-08-27 13:48:26,577 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: get_summary
+2023-08-27 13:48:26,578 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: sampled_history
+2023-08-27 13:48:26,579 DEBUG   HandlerThread:34518 [handler.py:handle_request():101] handle_request: shutdown
+2023-08-27 13:48:26,579 INFO    HandlerThread:34518 [handler.py:finish():535] shutting down handler
+2023-08-27 13:48:27,396 INFO    WriterThread:34518 [datastore.py:close():258] close: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20230827_134758-ut94dd1h/run-ut94dd1h.wandb
+2023-08-27 13:48:27,580 INFO    SenderThread:34518 [sender.py:finish():833] shutting down sender
+2023-08-27 13:48:27,581 INFO    MainThread:34518 [internal.py:handle_exit():78] Internal process exited

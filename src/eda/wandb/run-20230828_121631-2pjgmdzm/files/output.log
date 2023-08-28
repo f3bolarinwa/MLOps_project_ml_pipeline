@@ -1,0 +1,27 @@
+/Users/femibolarinwa_comp/miniconda3/envs/mlflow-9b415884987137d6e4126f77b409f166a1853da1/lib/python3.9/site-packages/numba/core/decorators.py:262: NumbaDeprecationWarning: [1mnumba.generated_jit is deprecated. Please see the documentation at: https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-generated-jit for more information and advice on a suitable replacement.
+  warnings.warn(msg, NumbaDeprecationWarning)
+/Users/femibolarinwa_comp/miniconda3/envs/mlflow-9b415884987137d6e4126f77b409f166a1853da1/lib/python3.9/site-packages/visions/backends/shared/nan_handling.py:51: NumbaDeprecationWarning: [1mThe 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def hasna(x: np.ndarray) -> bool:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 48895 entries, 0 to 48894
+Data columns (total 16 columns):
+ #   Column                          Non-Null Count  Dtype
+---  ------                          --------------  -----
+ 0   id                              48895 non-null  int64
+ 1   name                            48879 non-null  object
+ 2   host_id                         48895 non-null  int64
+ 3   host_name                       48874 non-null  object
+ 4   neighbourhood_group             48895 non-null  object
+ 5   neighbourhood                   48895 non-null  object
+ 6   latitude                        48895 non-null  float64
+ 7   longitude                       48895 non-null  float64
+ 8   room_type                       48895 non-null  object
+ 9   price                           48895 non-null  int64
+ 10  minimum_nights                  48895 non-null  int64
+ 11  number_of_reviews               48895 non-null  int64
+ 12  last_review                     38843 non-null  object
+ 13  reviews_per_month               38843 non-null  float64
+ 14  calculated_host_listings_count  48895 non-null  int64
+ 15  availability_365                48895 non-null  int64
+dtypes: float64(3), int64(7), object(6)
+memory usage: 6.0+ MB

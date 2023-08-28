@@ -1,0 +1,47 @@
+2023-08-25 14:48:14,851 INFO    MainThread:15815 [wandb_setup.py:_flush():69] setting env: {'project': 'nyc_airbnb', 'run_group': 'development'}
+2023-08-25 14:48:14,851 WARNING MainThread:15815 [wandb_setup.py:_flush():69] could not save program above cwd: /Users/femibolarinwa_comp/miniconda3/envs/mlflow-d1fd4b13aac386abe6aa5a2ada1ca11214902ce4/bin/pytest
+2023-08-25 14:48:14,851 INFO    MainThread:15815 [wandb_setup.py:_flush():69] setting login settings: {}
+2023-08-25 14:48:14,851 INFO    MainThread:15815 [wandb_init.py:_log_setup():334] Logging user logs to /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/data_check/wandb/run-20230825_144814-2m6wo63d/logs/debug.log
+2023-08-25 14:48:14,851 INFO    MainThread:15815 [wandb_init.py:_log_setup():335] Logging internal logs to /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/data_check/wandb/run-20230825_144814-2m6wo63d/logs/debug-internal.log
+2023-08-25 14:48:14,852 INFO    MainThread:15815 [wandb_init.py:init():367] calling init triggers
+2023-08-25 14:48:14,852 INFO    MainThread:15815 [wandb_init.py:init():372] wandb.init called with sweep_config: {}
+config: {}
+2023-08-25 14:48:14,852 INFO    MainThread:15815 [wandb_init.py:init():413] wandb.init() called when a run is still active
+2023-08-25 14:48:15,688 INFO    MainThread:15815 [wandb_run.py:_atexit_cleanup():1446] got exitcode: 0
+2023-08-25 14:48:15,689 INFO    MainThread:15815 [wandb_run.py:_restore():1418] restore
+2023-08-25 14:48:15,689 INFO    MainThread:15815 [redirect.py:uninstall():232] uninstall start
+2023-08-25 14:48:15,689 INFO    MainThread:15815 [redirect.py:_stop():287] _stop: stdout
+2023-08-25 14:48:15,689 INFO    MainThread:15815 [redirect.py:_stop():293] _stop closed: stdout
+2023-08-25 14:48:15,689 INFO    stdout    :15815 [redirect.py:_pipe_relay():129] relay done saw last write: stdout
+2023-08-25 14:48:15,689 INFO    stdout    :15815 [redirect.py:_pipe_relay():145] relay done done: stdout
+2023-08-25 14:48:15,689 INFO    MainThread:15815 [redirect.py:_stop():299] _stop joined: stdout
+2023-08-25 14:48:15,689 INFO    MainThread:15815 [redirect.py:_stop():301] _stop rd closed: stdout
+2023-08-25 14:48:15,689 INFO    MainThread:15815 [redirect.py:uninstall():236] uninstall done
+2023-08-25 14:48:15,689 INFO    MainThread:15815 [redirect.py:uninstall():232] uninstall start
+2023-08-25 14:48:15,689 INFO    MainThread:15815 [redirect.py:_stop():287] _stop: stderr
+2023-08-25 14:48:15,689 INFO    MainThread:15815 [redirect.py:_stop():293] _stop closed: stderr
+2023-08-25 14:48:15,689 INFO    stderr    :15815 [redirect.py:_pipe_relay():129] relay done saw last write: stderr
+2023-08-25 14:48:15,689 INFO    stderr    :15815 [redirect.py:_pipe_relay():145] relay done done: stderr
+2023-08-25 14:48:15,689 INFO    MainThread:15815 [redirect.py:_stop():299] _stop joined: stderr
+2023-08-25 14:48:15,689 INFO    MainThread:15815 [redirect.py:_stop():301] _stop rd closed: stderr
+2023-08-25 14:48:15,689 INFO    MainThread:15815 [redirect.py:uninstall():236] uninstall done
+2023-08-25 14:48:16,080 INFO    MainThread:15815 [wandb_run.py:_wait_for_finish():1568] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1144
+  total_bytes: 1144
+}
+
+2023-08-25 14:48:18,089 INFO    MainThread:15815 [wandb_run.py:_wait_for_finish():1568] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 1959
+  total_bytes: 1959
+}
+
+2023-08-25 14:48:19,172 INFO    MainThread:15815 [wandb_run.py:_show_files():1790] logging synced files

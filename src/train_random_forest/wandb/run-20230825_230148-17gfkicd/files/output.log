@@ -1,0 +1,11 @@
+2023-08-25 23:01:49,219 Downloading and reading trainval artifact
+2023-08-25 23:01:49,940 Minimum price: 10, Maximum price: 350
+2023-08-25 23:01:49,949 Preparing sklearn pipeline
+2023-08-25 23:01:49,949 Fitting
+2023-08-25 23:03:13,427 Scoring
+2023-08-25 23:03:13,525 Score: 0.5560383907411187
+2023-08-25 23:03:13,526 MAE: 33.77511019736842
+2023-08-25 23:03:13,526 Exporting model
+wandb: Adding directory to artifact (./random_forest_dir)... Done. 0.1s
+wandb: Network error (ConnectionError), entering retry loop. See /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/train_random_forest/wandb/run-20230825_230148-17gfkicd/logs/debug-internal.log for full traceback.
+wandb: Network error resolved after 0:00:07.902753, resuming normal operation.

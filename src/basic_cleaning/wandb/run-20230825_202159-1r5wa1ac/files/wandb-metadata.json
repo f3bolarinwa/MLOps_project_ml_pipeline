@@ -1,0 +1,35 @@
+{
+    "os": "macOS-13.4-arm64-arm-64bit",
+    "python": "3.8.17",
+    "heartbeatAt": "2023-08-26T00:22:00.449844",
+    "startedAt": "2023-08-26T00:21:59.710390",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--input_artifact",
+        "sample.csv:latest",
+        "--output_artifact",
+        "clean_sample.csv",
+        "--output_type",
+        "clean_sample",
+        "--output_description",
+        "Data with outliers and null values removed",
+        "--min_price",
+        "10",
+        "--max_price",
+        "350"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "src/basic_cleaning/run.py",
+    "git": {
+        "remote": "https://github.com/f3bolarinwa/build-ml-pipeline-for-short-term-rental-prices.git",
+        "commit": "ee12fe923335921a45579ab0e4698c2dbd49f8e4"
+    },
+    "email": "f3bolarinwa@yahoo.com",
+    "root": "/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices",
+    "host": "Femis-MacBook-Air.local",
+    "username": "femibolarinwa_comp",
+    "executable": "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-14ea07e8e65c1c8b3d59ee64e28b703fc4f03756/bin/python"
+}

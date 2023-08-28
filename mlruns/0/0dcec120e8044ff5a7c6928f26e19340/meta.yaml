@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/femibolarinwa_comp/Downloads/Udacity/MLOps%20Engineer/2-Building%20a%20Reproducible%20Model%20Workflow/MLOps_project_ml_pipeline/mlruns/0/0dcec120e8044ff5a7c6928f26e19340/artifacts
+end_time: 1693242755170
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0dcec120e8044ff5a7c6928f26e19340
+run_name: delicate-steed-98
+run_uuid: 0dcec120e8044ff5a7c6928f26e19340
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693242742278
+status: 4
+tags: []
+user_id: femibolarinwa_comp

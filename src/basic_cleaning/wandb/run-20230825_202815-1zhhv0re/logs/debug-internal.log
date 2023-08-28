@@ -1,0 +1,141 @@
+2023-08-25 20:28:16,320 INFO    MainThread:49982 [internal.py:wandb_internal():88] W&B internal server running at pid: 49982, started at: 2023-08-25 20:28:16.320228
+2023-08-25 20:28:16,321 INFO    WriterThread:49982 [datastore.py:open_for_write():77] open: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/run-1zhhv0re.wandb
+2023-08-25 20:28:16,321 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: check_version
+2023-08-25 20:28:16,321 DEBUG   SenderThread:49982 [sender.py:send():179] send: header
+2023-08-25 20:28:16,321 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: check_version
+2023-08-25 20:28:16,455 DEBUG   SenderThread:49982 [sender.py:send():179] send: run
+2023-08-25 20:28:16,762 INFO    SenderThread:49982 [dir_watcher.py:__init__():168] watching files in: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files
+2023-08-25 20:28:16,762 INFO    SenderThread:49982 [sender.py:_start_run_threads():704] run started: 1zhhv0re with start time 1693009695
+2023-08-25 20:28:16,762 DEBUG   SenderThread:49982 [sender.py:send():179] send: summary
+2023-08-25 20:28:16,762 INFO    SenderThread:49982 [sender.py:_save_file():829] saving file wandb-summary.json with policy end
+2023-08-25 20:28:16,767 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: run_start
+2023-08-25 20:28:16,771 DEBUG   HandlerThread:49982 [meta.py:__init__():39] meta init
+2023-08-25 20:28:16,771 DEBUG   HandlerThread:49982 [meta.py:__init__():53] meta init done
+2023-08-25 20:28:16,771 DEBUG   HandlerThread:49982 [meta.py:probe():210] probe
+2023-08-25 20:28:16,787 DEBUG   HandlerThread:49982 [meta.py:_setup_git():200] setup git
+2023-08-25 20:28:16,806 DEBUG   HandlerThread:49982 [meta.py:_setup_git():207] setup git done
+2023-08-25 20:28:16,807 DEBUG   HandlerThread:49982 [meta.py:_save_pip():57] save pip
+2023-08-25 20:28:16,808 DEBUG   HandlerThread:49982 [meta.py:_save_pip():71] save pip done
+2023-08-25 20:28:16,808 DEBUG   HandlerThread:49982 [meta.py:_save_conda():78] save conda
+2023-08-25 20:28:17,434 DEBUG   HandlerThread:49982 [meta.py:_save_conda():86] save conda done
+2023-08-25 20:28:17,434 DEBUG   HandlerThread:49982 [meta.py:probe():252] probe done
+2023-08-25 20:28:17,437 DEBUG   SenderThread:49982 [sender.py:send():179] send: telemetry
+2023-08-25 20:28:17,440 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: stop_status
+2023-08-25 20:28:17,634 DEBUG   SenderThread:49982 [sender.py:send():179] send: files
+2023-08-25 20:28:17,634 INFO    SenderThread:49982 [sender.py:_save_file():829] saving file wandb-metadata.json with policy now
+2023-08-25 20:28:17,635 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: stop_status
+2023-08-25 20:28:17,773 INFO    Thread-8  :49982 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/config.yaml
+2023-08-25 20:28:17,774 INFO    Thread-8  :49982 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/wandb-summary.json
+2023-08-25 20:28:17,774 INFO    Thread-8  :49982 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/requirements.txt
+2023-08-25 20:28:17,774 INFO    Thread-8  :49982 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/wandb-metadata.json
+2023-08-25 20:28:17,774 INFO    Thread-8  :49982 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/output.log
+2023-08-25 20:28:17,775 INFO    Thread-8  :49982 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/conda-environment.yaml
+2023-08-25 20:28:17,948 DEBUG   SenderThread:49982 [sender.py:send():179] send: config
+2023-08-25 20:28:18,370 INFO    Thread-11 :49982 [upload_job.py:push():133] Uploaded file /var/folders/hg/4w5qntdd3xl81j7pjn9pd1fh0000gn/T/tmplc223_h6wandb/6r4uyz5a-wandb-metadata.json
+2023-08-25 20:28:19,069 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: log_artifact
+2023-08-25 20:28:19,161 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: log_artifact
+2023-08-25 20:28:19,779 INFO    Thread-8  :49982 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/config.yaml
+2023-08-25 20:28:19,779 INFO    Thread-8  :49982 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/output.log
+2023-08-25 20:28:21,980 DEBUG   SenderThread:49982 [sender.py:send():179] send: telemetry
+2023-08-25 20:28:21,981 DEBUG   SenderThread:49982 [sender.py:send():179] send: exit
+2023-08-25 20:28:21,982 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-25 20:28:21,982 INFO    SenderThread:49982 [sender.py:send_exit():287] handling exit code: 0
+2023-08-25 20:28:21,983 INFO    SenderThread:49982 [sender.py:send_exit():295] send defer
+2023-08-25 20:28:21,983 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: poll_exit
+2023-08-25 20:28:21,985 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: defer
+2023-08-25 20:28:21,985 INFO    HandlerThread:49982 [handler.py:handle_request_defer():141] handle defer: 0
+2023-08-25 20:28:21,985 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: defer
+2023-08-25 20:28:21,985 INFO    SenderThread:49982 [sender.py:send_request_defer():304] handle sender defer: 0
+2023-08-25 20:28:21,985 INFO    SenderThread:49982 [sender.py:send_request_defer():342] send defer: 1
+2023-08-25 20:28:21,986 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: defer
+2023-08-25 20:28:21,986 INFO    HandlerThread:49982 [handler.py:handle_request_defer():141] handle defer: 1
+2023-08-25 20:28:22,703 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-25 20:28:22,703 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: defer
+2023-08-25 20:28:22,703 INFO    SenderThread:49982 [sender.py:send_request_defer():304] handle sender defer: 1
+2023-08-25 20:28:22,703 INFO    SenderThread:49982 [sender.py:send_request_defer():342] send defer: 2
+2023-08-25 20:28:22,707 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: defer
+2023-08-25 20:28:22,707 INFO    HandlerThread:49982 [handler.py:handle_request_defer():141] handle defer: 2
+2023-08-25 20:28:22,791 INFO    Thread-8  :49982 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/output.log
+2023-08-25 20:28:22,880 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: poll_exit
+2023-08-25 20:28:22,881 DEBUG   SenderThread:49982 [sender.py:send():179] send: stats
+2023-08-25 20:28:22,881 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: defer
+2023-08-25 20:28:22,881 INFO    SenderThread:49982 [sender.py:send_request_defer():304] handle sender defer: 2
+2023-08-25 20:28:22,882 INFO    SenderThread:49982 [sender.py:send_request_defer():342] send defer: 3
+2023-08-25 20:28:22,882 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: defer
+2023-08-25 20:28:22,882 INFO    HandlerThread:49982 [handler.py:handle_request_defer():141] handle defer: 3
+2023-08-25 20:28:22,883 DEBUG   SenderThread:49982 [sender.py:send():179] send: summary
+2023-08-25 20:28:22,884 INFO    SenderThread:49982 [sender.py:_save_file():829] saving file wandb-summary.json with policy end
+2023-08-25 20:28:22,884 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: defer
+2023-08-25 20:28:22,884 INFO    SenderThread:49982 [sender.py:send_request_defer():304] handle sender defer: 3
+2023-08-25 20:28:22,884 INFO    SenderThread:49982 [sender.py:send_request_defer():342] send defer: 4
+2023-08-25 20:28:22,885 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: defer
+2023-08-25 20:28:22,885 INFO    HandlerThread:49982 [handler.py:handle_request_defer():141] handle defer: 4
+2023-08-25 20:28:22,885 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: defer
+2023-08-25 20:28:22,885 INFO    SenderThread:49982 [sender.py:send_request_defer():304] handle sender defer: 4
+2023-08-25 20:28:22,885 INFO    SenderThread:49982 [sender.py:send_request_defer():342] send defer: 5
+2023-08-25 20:28:22,886 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: defer
+2023-08-25 20:28:22,886 INFO    HandlerThread:49982 [handler.py:handle_request_defer():141] handle defer: 5
+2023-08-25 20:28:22,886 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: defer
+2023-08-25 20:28:22,886 INFO    SenderThread:49982 [sender.py:send_request_defer():304] handle sender defer: 5
+2023-08-25 20:28:22,886 INFO    SenderThread:49982 [dir_watcher.py:finish():282] shutting down directory watcher
+2023-08-25 20:28:22,988 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-25 20:28:23,798 INFO    SenderThread:49982 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/wandb-summary.json
+2023-08-25 20:28:23,798 INFO    SenderThread:49982 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/config.yaml
+2023-08-25 20:28:23,799 INFO    SenderThread:49982 [dir_watcher.py:finish():312] scan: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files
+2023-08-25 20:28:23,799 INFO    SenderThread:49982 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/requirements.txt requirements.txt
+2023-08-25 20:28:23,799 INFO    SenderThread:49982 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/output.log output.log
+2023-08-25 20:28:23,805 INFO    SenderThread:49982 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/config.yaml config.yaml
+2023-08-25 20:28:23,806 INFO    SenderThread:49982 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/wandb-summary.json wandb-summary.json
+2023-08-25 20:28:23,807 INFO    SenderThread:49982 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/conda-environment.yaml conda-environment.yaml
+2023-08-25 20:28:23,807 INFO    SenderThread:49982 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/wandb-metadata.json wandb-metadata.json
+2023-08-25 20:28:23,807 INFO    SenderThread:49982 [sender.py:send_request_defer():342] send defer: 6
+2023-08-25 20:28:23,807 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: poll_exit
+2023-08-25 20:28:23,809 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: defer
+2023-08-25 20:28:23,813 INFO    HandlerThread:49982 [handler.py:handle_request_defer():141] handle defer: 6
+2023-08-25 20:28:23,817 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: defer
+2023-08-25 20:28:23,819 INFO    SenderThread:49982 [sender.py:send_request_defer():304] handle sender defer: 6
+2023-08-25 20:28:23,819 INFO    SenderThread:49982 [file_pusher.py:finish():176] shutting down file pusher
+2023-08-25 20:28:23,820 INFO    SenderThread:49982 [sender.py:send_request_defer():342] send defer: 7
+2023-08-25 20:28:23,826 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: defer
+2023-08-25 20:28:23,827 INFO    HandlerThread:49982 [handler.py:handle_request_defer():141] handle defer: 7
+2023-08-25 20:28:23,827 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: defer
+2023-08-25 20:28:23,827 INFO    SenderThread:49982 [sender.py:send_request_defer():304] handle sender defer: 7
+2023-08-25 20:28:23,911 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-25 20:28:24,058 INFO    SenderThread:49982 [sender.py:send_request_defer():342] send defer: 8
+2023-08-25 20:28:24,058 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: poll_exit
+2023-08-25 20:28:24,059 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: defer
+2023-08-25 20:28:24,059 INFO    HandlerThread:49982 [handler.py:handle_request_defer():141] handle defer: 8
+2023-08-25 20:28:24,059 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: defer
+2023-08-25 20:28:24,059 INFO    SenderThread:49982 [sender.py:send_request_defer():304] handle sender defer: 8
+2023-08-25 20:28:24,059 INFO    SenderThread:49982 [sender.py:send_request_defer():342] send defer: 9
+2023-08-25 20:28:24,059 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: defer
+2023-08-25 20:28:24,059 INFO    HandlerThread:49982 [handler.py:handle_request_defer():141] handle defer: 9
+2023-08-25 20:28:24,059 DEBUG   SenderThread:49982 [sender.py:send():179] send: final
+2023-08-25 20:28:24,059 DEBUG   SenderThread:49982 [sender.py:send():179] send: footer
+2023-08-25 20:28:24,059 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: defer
+2023-08-25 20:28:24,059 INFO    SenderThread:49982 [sender.py:send_request_defer():304] handle sender defer: 9
+2023-08-25 20:28:24,160 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-25 20:28:24,160 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: poll_exit
+2023-08-25 20:28:24,263 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-25 20:28:24,263 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: poll_exit
+2023-08-25 20:28:24,336 INFO    Thread-13 :49982 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/output.log
+2023-08-25 20:28:24,336 INFO    Thread-16 :49982 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/conda-environment.yaml
+2023-08-25 20:28:24,336 INFO    Thread-15 :49982 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/wandb-summary.json
+2023-08-25 20:28:24,345 INFO    Thread-14 :49982 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/config.yaml
+2023-08-25 20:28:24,366 INFO    Thread-12 :49982 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/files/requirements.txt
+2023-08-25 20:28:24,372 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-25 20:28:24,372 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: poll_exit
+2023-08-25 20:28:24,480 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-25 20:28:24,481 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: poll_exit
+2023-08-25 20:28:24,589 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-25 20:28:24,590 DEBUG   SenderThread:49982 [sender.py:send_request():193] send_request: poll_exit
+2023-08-25 20:28:24,590 INFO    SenderThread:49982 [file_pusher.py:join():181] waiting for file pusher
+2023-08-25 20:28:24,593 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: get_summary
+2023-08-25 20:28:24,595 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: sampled_history
+2023-08-25 20:28:24,597 DEBUG   HandlerThread:49982 [handler.py:handle_request():124] handle_request: shutdown
+2023-08-25 20:28:24,598 INFO    HandlerThread:49982 [handler.py:finish():638] shutting down handler
+2023-08-25 20:28:25,065 INFO    WriterThread:49982 [datastore.py:close():258] close: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/build-ml-pipeline-for-short-term-rental-prices/src/basic_cleaning/wandb/run-20230825_202815-1zhhv0re/run-1zhhv0re.wandb
+2023-08-25 20:28:25,595 INFO    SenderThread:49982 [sender.py:finish():933] shutting down sender
+2023-08-25 20:28:25,596 INFO    SenderThread:49982 [file_pusher.py:finish():176] shutting down file pusher
+2023-08-25 20:28:25,596 INFO    SenderThread:49982 [file_pusher.py:join():181] waiting for file pusher
+2023-08-25 20:28:25,597 INFO    MainThread:49982 [internal.py:handle_exit():78] Internal process exited

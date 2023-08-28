@@ -1,0 +1,66 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.21
+    framework: sklearn
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.9.16
+    t:
+      1:
+      - 5
+      2:
+      - 5
+      4: 3.9.16
+      5: 0.10.21
+      8:
+      - 4
+      - 5
+criterion:
+  desc: null
+  value: mae
+max_depth:
+  desc: null
+  value: 5
+max_features:
+  desc: null
+  value: 0.2
+max_tfidf_features:
+  desc: null
+  value: 10
+min_samples_leaf:
+  desc: null
+  value: 2
+min_samples_split:
+  desc: null
+  value: 4
+n_estimators:
+  desc: null
+  value: 50
+n_jobs:
+  desc: null
+  value: -1
+oob_score:
+  desc: null
+  value: true
+output_artifact:
+  desc: null
+  value: random_forest_dir
+random_seed:
+  desc: null
+  value: 42
+rf_config:
+  desc: null
+  value: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible
+    Model Workflow/build-ml-pipeline-for-short-term-rental-prices/multirun/2023-08-25/21-12-05/0/rf_config.json
+stratify_by:
+  desc: null
+  value: neighbourhood_group
+trainval_artifact:
+  desc: null
+  value: trainval_data.csv:latest
+val_size:
+  desc: null
+  value: 0.2

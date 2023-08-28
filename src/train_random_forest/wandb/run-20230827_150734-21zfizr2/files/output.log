@@ -1,0 +1,9 @@
+2023-08-27 15:07:34,921 Downloading and reading trainval artifact
+2023-08-27 15:07:35,657 Minimum price: 10, Maximum price: 350
+2023-08-27 15:07:35,667 Preparing sklearn pipeline
+2023-08-27 15:07:35,668 Fitting
+2023-08-27 15:08:36,675 Scoring
+2023-08-27 15:08:36,755 Score: 0.4896347491932289
+2023-08-27 15:08:36,755 MAE: 34.95056359649123
+2023-08-27 15:08:36,755 Exporting model
+wandb: Adding directory to artifact (./random_forest_dir)... Done. 0.0s

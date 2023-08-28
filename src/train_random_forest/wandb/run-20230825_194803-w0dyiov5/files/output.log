@@ -1,0 +1,8 @@
+2023-08-25 19:48:04,588 Downloading and reading trainval artifact
+2023-08-25 19:48:05,432 Minimum price: 10, Maximum price: 350
+2023-08-25 19:48:05,444 Preparing sklearn pipeline
+2023-08-25 19:48:05,445 Fitting
+2023-08-25 19:49:05,377 Scoring
+2023-08-25 19:49:05,448 Score: 0.5541790357772942
+2023-08-25 19:49:05,448 MAE: 33.26802796052631
+2023-08-25 19:49:05,448 Exporting model

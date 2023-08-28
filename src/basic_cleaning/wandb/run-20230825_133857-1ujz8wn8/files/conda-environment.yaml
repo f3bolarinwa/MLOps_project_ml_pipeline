@@ -1,0 +1,55 @@
+name: mlflow-14ea07e8e65c1c8b3d59ee64e28b703fc4f03756
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - bzip2=1.0.8=h3422bc3_4
+  - ca-certificates=2023.7.22=hf0a4a13_0
+  - libblas=3.9.0=17_osxarm64_openblas
+  - libcblas=3.9.0=17_osxarm64_openblas
+  - libcxx=16.0.6=h4653b0c_0
+  - libffi=3.4.2=h3422bc3_5
+  - libgfortran=5.0.0=12_3_0_hd922786_1
+  - libgfortran5=12.3.0=ha3a6a3e_1
+  - liblapack=3.9.0=17_osxarm64_openblas
+  - libopenblas=0.3.23=openmp_hc731615_0
+  - libsqlite=3.43.0=hb31c410_0
+  - libzlib=1.2.13=h53f4e23_5
+  - llvm-openmp=16.0.6=h1c12783_0
+  - ncurses=6.4=h7ea286d_0
+  - numpy=1.24.4=py38ha84db1f_0
+  - openssl=3.1.2=h53f4e23_0
+  - pandas=1.2.3=py38h9b9bf68_0
+  - pip=20.3.3=pyhd8ed1ab_0
+  - python=3.8.17=h3ba56d0_0_cpython
+  - python-dateutil=2.8.2=pyhd8ed1ab_0
+  - python_abi=3.8=3_cp38
+  - pytz=2023.3=pyhd8ed1ab_0
+  - readline=8.2=h92ec313_1
+  - setuptools=59.8.0=py38h10201cd_1
+  - six=1.16.0=pyh6c4a22f_0
+  - tk=8.6.12=he1e0b03_0
+  - wheel=0.41.2=pyhd8ed1ab_0
+  - xz=5.2.6=h57fd34a_0
+  - pip:
+      - certifi==2023.7.22
+      - charset-normalizer==3.2.0
+      - click==8.1.7
+      - configparser==6.0.0
+      - docker-pycreds==0.4.0
+      - gitdb==4.0.10
+      - gitpython==3.1.32
+      - idna==3.4
+      - pathtools==0.1.2
+      - promise==2.3
+      - protobuf==3.20.3
+      - psutil==5.9.5
+      - pyyaml==6.0.1
+      - requests==2.31.0
+      - sentry-sdk==1.29.2
+      - shortuuid==1.0.11
+      - smmap==5.0.0
+      - subprocess32==3.5.4
+      - urllib3==2.0.4
+      - wandb==0.10.31
+prefix: /Users/femibolarinwa_comp/miniconda3/envs/mlflow-14ea07e8e65c1c8b3d59ee64e28b703fc4f03756

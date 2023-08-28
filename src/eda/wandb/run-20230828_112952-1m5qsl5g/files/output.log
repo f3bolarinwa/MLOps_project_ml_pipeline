@@ -1,0 +1,125 @@
+Collecting pandas-profiling
+  Downloading pandas_profiling-3.6.6-py2.py3-none-any.whl (324 kB)
+     |████████████████████████████████| 324 kB 3.1 MB/s
+[?25hCollecting ydata-profiling
+  Downloading ydata_profiling-4.5.1-py2.py3-none-any.whl (357 kB)
+     |████████████████████████████████| 357 kB 26.4 MB/s
+[?25hRequirement already satisfied: scipy<1.12,>=1.4.1 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from ydata-profiling->pandas-profiling) (1.11.2)
+Requirement already satisfied: pandas!=1.4.0,<2.1,>1.1 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from ydata-profiling->pandas-profiling) (1.2.3)
+Requirement already satisfied: PyYAML<6.1,>=5.0.0 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from ydata-profiling->pandas-profiling) (6.0.1)
+Requirement already satisfied: matplotlib<4,>=3.2 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from ydata-profiling->pandas-profiling) (3.3.4)
+Requirement already satisfied: jinja2<3.2,>=2.11.1 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from ydata-profiling->pandas-profiling) (2.11.3)
+Requirement already satisfied: requests<3,>=2.24.0 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from ydata-profiling->pandas-profiling) (2.31.0)
+Requirement already satisfied: tqdm<5,>=4.48.2 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from ydata-profiling->pandas-profiling) (4.66.1)
+Collecting htmlmin==0.1.12
+  Downloading htmlmin-0.1.12.tar.gz (19 kB)
+Collecting imagehash==4.3.1
+  Downloading ImageHash-4.3.1-py2.py3-none-any.whl (296 kB)
+     |████████████████████████████████| 296 kB 63.1 MB/s
+[?25hRequirement already satisfied: pillow in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from imagehash==4.3.1->ydata-profiling->pandas-profiling) (10.0.0)
+Collecting visions[type_image_path]==0.7.5
+  Downloading visions-0.7.5-py3-none-any.whl (102 kB)
+     |████████████████████████████████| 102 kB 39.9 MB/s
+[?25hRequirement already satisfied: attrs>=19.3.0 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from visions[type_image_path]==0.7.5->ydata-profiling->pandas-profiling) (23.1.0)
+Collecting dacite>=1.8
+  Downloading dacite-1.8.1-py3-none-any.whl (14 kB)
+Requirement already satisfied: MarkupSafe>=0.23 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from jinja2<3.2,>=2.11.1->ydata-profiling->pandas-profiling) (1.1.1)
+Requirement already satisfied: kiwisolver>=1.0.1 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from matplotlib<4,>=3.2->ydata-profiling->pandas-profiling) (1.4.5)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.3 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from matplotlib<4,>=3.2->ydata-profiling->pandas-profiling) (3.1.1)
+Requirement already satisfied: cycler>=0.10 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from matplotlib<4,>=3.2->ydata-profiling->pandas-profiling) (0.11.0)
+Requirement already satisfied: python-dateutil>=2.1 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from matplotlib<4,>=3.2->ydata-profiling->pandas-profiling) (2.8.2)
+Collecting multimethod<2,>=1.4
+  Downloading multimethod-1.9.1-py3-none-any.whl (10 kB)
+Collecting networkx>=2.4
+  Downloading networkx-3.1-py3-none-any.whl (2.1 MB)
+     |████████████████████████████████| 2.1 MB 50.7 MB/s
+[?25hCollecting numpy<1.24,>=1.16.0
+  Downloading numpy-1.23.5-cp39-cp39-macosx_11_0_arm64.whl (13.4 MB)
+     |████████████████████████████████| 13.4 MB 66.0 MB/s
+[?25hRequirement already satisfied: pytz>=2017.3 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from pandas!=1.4.0,<2.1,>1.1->ydata-profiling->pandas-profiling) (2022.7.1)
+Collecting phik<0.13,>=0.11.1
+  Downloading phik-0.12.3-cp39-cp39-macosx_11_0_arm64.whl (649 kB)
+     |████████████████████████████████| 649 kB 22.8 MB/s
+[?25hRequirement already satisfied: joblib>=0.14.1 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from phik<0.13,>=0.11.1->ydata-profiling->pandas-profiling) (1.3.2)
+Collecting pydantic<2,>=1.8.1
+  Downloading pydantic-1.10.12-cp39-cp39-macosx_11_0_arm64.whl (2.6 MB)
+     |████████████████████████████████| 2.6 MB 81.9 MB/s
+[?25hRequirement already satisfied: typing-extensions>=4.2.0 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from pydantic<2,>=1.8.1->ydata-profiling->pandas-profiling) (4.7.1)
+Requirement already satisfied: six>=1.5 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from python-dateutil>=2.1->matplotlib<4,>=3.2->ydata-profiling->pandas-profiling) (1.16.0)
+Requirement already satisfied: idna<4,>=2.5 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from requests<3,>=2.24.0->ydata-profiling->pandas-profiling) (3.4)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from requests<3,>=2.24.0->ydata-profiling->pandas-profiling) (2023.7.22)
+Requirement already satisfied: charset-normalizer<4,>=2 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from requests<3,>=2.24.0->ydata-profiling->pandas-profiling) (3.2.0)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from requests<3,>=2.24.0->ydata-profiling->pandas-profiling) (2.0.4)
+Collecting seaborn<0.13,>=0.10.1
+  Downloading seaborn-0.12.2-py3-none-any.whl (293 kB)
+     |████████████████████████████████| 293 kB 82.4 MB/s
+[?25hCollecting statsmodels<1,>=0.13.2
+  Downloading statsmodels-0.14.0-cp39-cp39-macosx_11_0_arm64.whl (9.4 MB)
+     |████████████████████████████████| 9.4 MB 174.9 MB/s
+[?25hRequirement already satisfied: packaging>=21.3 in /Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages (from statsmodels<1,>=0.13.2->ydata-profiling->pandas-profiling) (23.1)
+Collecting patsy>=0.5.2
+  Downloading patsy-0.5.3-py2.py3-none-any.whl (233 kB)
+     |████████████████████████████████| 233 kB 184.4 MB/s
+[?25hCollecting tangled-up-in-unicode>=0.0.4
+  Downloading tangled_up_in_unicode-0.2.0-py3-none-any.whl (4.7 MB)
+     |████████████████████████████████| 4.7 MB 82.6 MB/s
+[?25hCollecting typeguard<3,>=2.13.2
+  Downloading typeguard-2.13.3-py3-none-any.whl (17 kB)
+Collecting wordcloud>=1.9.1
+  Downloading wordcloud-1.9.2.tar.gz (222 kB)
+     |████████████████████████████████| 222 kB 49.1 MB/s
+[?25hCollecting PyWavelets
+  Downloading PyWavelets-1.4.1-cp39-cp39-macosx_11_0_arm64.whl (4.3 MB)
+     |████████████████████████████████| 4.3 MB 64.0 MB/s
+[?25hBuilding wheels for collected packages: htmlmin, wordcloud
+  Building wheel for htmlmin (setup.py) ... [?25ldone
+[?25h  Created wheel for htmlmin: filename=htmlmin-0.1.12-py3-none-any.whl size=27097 sha256=7c9a29a5f8e1777f58c3955b52b2ec118a035bd52425dce512d80518c3894064
+  Stored in directory: /Users/femibolarinwa_comp/Library/Caches/pip/wheels/1d/05/04/c6d7d3b66539d9e659ac6dfe81e2d0fd4c1a8316cc5a403300
+
+  Building wheel for wordcloud (setup.py) ... [?25ldone
+[?25h  Created wheel for wordcloud: filename=wordcloud-1.9.2-cp39-cp39-macosx_11_0_arm64.whl size=99180 sha256=eb7c56ed7d38626bbe2d2dc67d7cce92eb5398ad115932bff8e218e89cc1c4aa
+  Stored in directory: /Users/femibolarinwa_comp/Library/Caches/pip/wheels/fd/79/b1/1e0a49160de8dfb17c54736cc73759e1d26f9343b61c0d5441
+Successfully built htmlmin wordcloud
+Installing collected packages: numpy, tangled-up-in-unicode, PyWavelets, networkx, multimethod, visions, patsy, imagehash, wordcloud, typeguard, statsmodels, seaborn, pydantic, phik, htmlmin, dacite, ydata-profiling, pandas-profiling
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.24.4
+    Uninstalling numpy-1.24.4:
+      Successfully uninstalled numpy-1.24.4
+/Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+/Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages/numba/core/decorators.py:262: NumbaDeprecationWarning: [1mnumba.generated_jit is deprecated. Please see the documentation at: https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-generated-jit for more information and advice on a suitable replacement.
+  warnings.warn(msg, NumbaDeprecationWarning)
+/Users/femibolarinwa_comp/miniconda3/envs/nyc_airbnb_dev/lib/python3.9/site-packages/visions/backends/shared/nan_handling.py:51: NumbaDeprecationWarning: [1mThe 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  def hasna(x: np.ndarray) -> bool:
+Successfully installed PyWavelets-1.4.1 dacite-1.8.1 htmlmin-0.1.12 imagehash-4.3.1 multimethod-1.9.1 networkx-3.1 numpy-1.23.5 pandas-profiling-3.6.6 patsy-0.5.3 phik-0.12.3 pydantic-1.10.12 seaborn-0.12.2 statsmodels-0.14.0 tangled-up-in-unicode-0.2.0 typeguard-2.13.3 visions-0.7.5 wordcloud-1.9.2 ydata-profiling-4.5.1
+Note: you may need to restart the kernel to use updated packages.
+<ipython-input-5-870ad162aabe>:1: DeprecationWarning: `import pandas_profiling` is going to be deprecated by April 1st. Please use `import ydata_profiling` instead.
+  import pandas_profiling
+
+
+Summarize dataset: 100%|██████████| 126/126 [00:07<00:00, 17.18it/s, Completed]
+
+Generate report structure: 100%|██████████| 1/1 [00:01<00:00,  1.52s/it]
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 48895 entries, 0 to 48894
+Data columns (total 16 columns):
+ #   Column                          Non-Null Count  Dtype
+---  ------                          --------------  -----
+ 0   id                              48895 non-null  int64
+ 1   name                            48879 non-null  object
+ 2   host_id                         48895 non-null  int64
+ 3   host_name                       48874 non-null  object
+ 4   neighbourhood_group             48895 non-null  object
+ 5   neighbourhood                   48895 non-null  object
+ 6   latitude                        48895 non-null  float64
+ 7   longitude                       48895 non-null  float64
+ 8   room_type                       48895 non-null  object
+ 9   price                           48895 non-null  int64
+ 10  minimum_nights                  48895 non-null  int64
+ 11  number_of_reviews               48895 non-null  int64
+ 12  last_review                     38843 non-null  object
+ 13  reviews_per_month               38843 non-null  float64
+ 14  calculated_host_listings_count  48895 non-null  int64
+ 15  availability_365                48895 non-null  int64
+dtypes: float64(3), int64(7), object(6)
+memory usage: 6.0+ MB

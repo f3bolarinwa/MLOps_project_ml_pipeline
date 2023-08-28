@@ -1,0 +1,568 @@
+diff --git a/conda.yml b/conda.yml
+index 220ec0b..c1a5b27 100644
+--- a/conda.yml
++++ b/conda.yml
+@@ -3,7 +3,7 @@ channels:
+   - conda-forge
+   - defaults
+ dependencies:
+-  - mlflow=1.14.1
++  - mlflow=2.2.2
+   - pyyaml=5.3.1
+   - hydra-core=1.0.6
+   - pip=20.3.3
+diff --git a/config.yaml b/config.yaml
+index 39ca048..f805194 100644
+--- a/config.yaml
++++ b/config.yaml
+@@ -2,7 +2,7 @@ main:
+   components_repository: "https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices#components"
+   # All the intermediate files will be copied to this directory at the end of the run.
+   # Set this to null if you are running in prod
+-  project_name: nyc_airbnb
++  project_name: MLOps_nyc_airbnb
+   experiment_name: development
+   steps: all
+ etl:
+diff --git a/environment.yml b/environment.yml
+index efabac5..a507535 100644
+--- a/environment.yml
++++ b/environment.yml
+@@ -3,7 +3,7 @@ channels:
+   - conda-forge
+   - defaults
+ dependencies:
+-  - mlflow=1.14.1
++  - mlflow=2.2.2
+   - ipython=7.21.0
+   - notebook=6.2.0
+   - jupyterlab=3.0.10
+diff --git a/main.py b/main.py
+index 27a89b1..ec9b527 100644
+--- a/main.py
++++ b/main.py
+@@ -1,5 +1,13 @@
+-import json
++'''
++This module contains code to run the entire ML pipeline
++or a single component of the pipeline at a time using MLflow
++
++Author: Femi Bolarinwa
++Date: August 2023
++'''
+ 
++#importing libraries
++import json
+ import mlflow
+ import tempfile
+ import os
+@@ -7,24 +15,25 @@ import wandb
+ import hydra
+ from omegaconf import DictConfig
+ 
++#components of the ML pipeline
+ _steps = [
+     "download",
+     "basic_cleaning",
+     "data_check",
+     "data_split",
+     "train_random_forest",
+-    # NOTE: We do not include this in the steps so it is not run by mistake.
+-    # You first need to promote a model export to "prod" before you can run this,
+-    # then you need to run this step explicitly
+-#    "test_regression_model"
++    # NOTE: I do not include "test_regression_model" pipeline component in the
++    #steps so it is not run by mistake. You first need to promote a model export
++    #to "prod" in W&B before you can run the component
++      
+ ]
+ 
+ 
+-# This automatically reads in the configuration
++# This enables hydra to read the configuration file
+ @hydra.main(config_name='config')
+ def go(config: DictConfig):
+ 
+-    # Setup the wandb experiment. All runs will be grouped under this name
++    # Sets up the wandb experiment. All runs will be grouped under this name
+     os.environ["WANDB_PROJECT"] = config["main"]["project_name"]
+     os.environ["WANDB_RUN_GROUP"] = config["main"]["experiment_name"]
+ 
+@@ -32,11 +41,14 @@ def go(config: DictConfig):
+     steps_par = config['main']['steps']
+     active_steps = steps_par.split(",") if steps_par != "all" else _steps
+ 
+-    # Move to a temporary directory
++    # Moves to a temporary directory so that no file is left in the local directory
++    #after running ML pipeline or components
++
+     with tempfile.TemporaryDirectory() as tmp_dir:
+ 
+         if "download" in active_steps:
+-            # Download file and load in W&B
++            # Extracts file from a git repo and load to W&B.
++            # Note that MLflow project environment is defined in the git repo
+             _ = mlflow.run(
+                 f"{config['main']['components_repository']}/get_data",
+                 "main",
+@@ -50,47 +62,96 @@ def go(config: DictConfig):
+             )
+ 
+         if "basic_cleaning" in active_steps:
+-            ##################
+-            # Implement here #
+-            ##################
+-            pass
++            # Performs basic ETL on output of "download" component.
++            # Note that MLflow project environment for this component is defined in the local machine
++
++            _ = mlflow.run(
++                 os.path.join(hydra.utils.get_original_cwd(), "src", "basic_cleaning"),
++                 "main",
++                 parameters={
++                     "input_artifact": "sample.csv:latest",
++                     "output_artifact": "clean_sample.csv",
++                     "output_type": "clean_sample",
++                     "output_description": "Data with outliers and null values removed",
++                     "min_price": config['etl']['min_price'],
++                     "max_price": config['etl']['max_price']
++                 },
++            )
+ 
+         if "data_check" in active_steps:
+-            ##################
+-            # Implement here #
+-            ##################
+-            pass
++            # Implement basic data checks and validation using pytest on output of "basic_cleaning" component
++            # Note that MLflow project environment for this component is defined in the local machine
++            _ = mlflow.run(
++                 os.path.join(hydra.utils.get_original_cwd(), "src", "data_check"),
++                 "main",
++                 parameters={
++                     "csv": "clean_sample.csv:latest",
++                     "ref": "clean_sample.csv:reference",
++                     "kl_threshold": config['data_check']['kl_threshold'],
++                     "min_price": config['etl']['min_price'],
++                     "max_price": config['etl']['max_price']
++                 },
++            )
++
++
+ 
+         if "data_split" in active_steps:
+-            ##################
+-            # Implement here #
+-            ##################
+-            pass
++            # splits output of "data_check" component to train-test datasets.
++            # Note that MLflow project environment for this component is defined in a git repo
++            _ = mlflow.run(
++                f"{config['main']['components_repository']}/train_val_test_split",
++                "main",
++                version='main',
++                parameters={
++                    "input": "clean_sample.csv:latest",
++                    "test_size": config['modeling']['test_size'],
++                    "random_seed": config['modeling']['random_seed'],
++                    "stratify_by": config['modeling']['stratify_by']
++                },
++            )
++
+ 
+         if "train_random_forest" in active_steps:
++            #component trains a random forest model on train_data from "data_slit" component.
++            # Note that MLflow project environment for this component is defined in the local machine
+ 
+             # NOTE: we need to serialize the random forest configuration into JSON
+             rf_config = os.path.abspath("rf_config.json")
+             with open(rf_config, "w+") as fp:
+-                json.dump(dict(config["modeling"]["random_forest"].items()), fp)  # DO NOT TOUCH
++                json.dump(dict(config["modeling"]["random_forest"].items()), fp) 
+ 
+-            # NOTE: use the rf_config we just created as the rf_config parameter for the train_random_forest
++            # NOTE: i'll use the rf_config we just created as the rf_config parameter for the train_random_forest
+             # step
+ 
+-            ##################
+-            # Implement here #
+-            ##################
+-
+-            pass
++            _ = mlflow.run(
++            os.path.join(hydra.utils.get_original_cwd(), "src", "train_random_forest"),
++            "main",
++            parameters={
++                "trainval_artifact": "trainval_data.csv:latest",
++                "val_size": config["modeling"]["val_size"],
++                "random_seed": config["modeling"]["random_seed"],
++                "stratify_by": config["modeling"]["stratify_by"],
++                "rf_config": rf_config,
++                "max_tfidf_features": config["modeling"]["max_tfidf_features"],
++                "output_artifact": "random_forest_export"
+ 
+-        if "test_regression_model" in active_steps:
++            },
++        )
+ 
+-            ##################
+-            # Implement here #
+-            ##################
+ 
+-            pass
++        if "test_regression_model" in active_steps:
++            #component to test selected model.
++            #i need to promote a model export to "prod" in W&B before running the component.
++            # Note that MLflow project environment for this component is defined in the local machine
+ 
++            _ = mlflow.run(
++            os.path.join(hydra.utils.get_original_cwd(), "src", "test_regression_model"),
++            "main",
++            parameters={
++                "mlflow_model": "random_forest_dir:prod",
++                "test_dataset": "test_data.csv:latest"
++            }
++        )
+ 
+ if __name__ == "__main__":
+     go()
+diff --git a/src/data_check/MLproject b/src/data_check/MLproject
+index 8874479..b5c928e 100644
+--- a/src/data_check/MLproject
++++ b/src/data_check/MLproject
+@@ -25,4 +25,8 @@ entry_points:
+         description: Maximum accepted price
+         type: float
+ 
+-    command: "pytest . -vv --csv {csv} --ref {ref} --kl_threshold {kl_threshold} --min_price {min_price} --max_price {max_price}"
++    command: "pytest . -vv --csv {csv} \
++                           --ref {ref} \
++                           --kl_threshold {kl_threshold} \
++                           --min_price {min_price} \
++                           --max_price {max_price}"
+diff --git a/src/data_check/test_data.py b/src/data_check/test_data.py
+index 6ed3ec6..db88da1 100644
+--- a/src/data_check/test_data.py
++++ b/src/data_check/test_data.py
+@@ -1,9 +1,20 @@
++'''
++This module contains functions to be used by pytest
++for basic checks and validation on the dataset.
++
++Author: Femi Bolarinwa
++Date: August 2023
++'''
++
+ import pandas as pd
+ import numpy as np
+ import scipy.stats
+ 
+ 
+ def test_column_names(data):
++    '''
++    Tests that all expected columns are available in dataset 
++    '''
+ 
+     expected_colums = [
+         "id",
+@@ -31,6 +42,9 @@ def test_column_names(data):
+ 
+ 
+ def test_neighborhood_names(data):
++    '''
++    Tests that neighbourhood in data is in a set of known neighbourhoods
++    '''
+ 
+     known_names = ["Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Island"]
+ 
+@@ -42,8 +56,9 @@ def test_neighborhood_names(data):
+ 
+ def test_proper_boundaries(data: pd.DataFrame):
+     """
+-    Test proper longitude and latitude boundaries for properties in and around NYC
++    Tests proper longitude and latitude boundaries for properties in and around NYC
+     """
++
+     idx = data['longitude'].between(-74.25, -73.50) & data['latitude'].between(40.5, 41.2)
+ 
+     assert np.sum(~idx) == 0
+@@ -54,12 +69,26 @@ def test_similar_neigh_distrib(data: pd.DataFrame, ref_data: pd.DataFrame, kl_th
+     Apply a threshold on the KL divergence to detect if the distribution of the new data is
+     significantly different than that of the reference dataset
+     """
++
+     dist1 = data['neighbourhood_group'].value_counts().sort_index()
+     dist2 = ref_data['neighbourhood_group'].value_counts().sort_index()
+ 
+     assert scipy.stats.entropy(dist1, dist2, base=2) < kl_threshold
+ 
+ 
+-########################################################
+-# Implement here test_row_count and test_price_range   #
+-########################################################
++
++def test_row_count(data):
++    '''
++    Tests that datasize is appropriate
++    '''
++
++    assert 15000 < data.shape[0] < 1000000
++
++
++def test_price_range(data, min_price, max_price):
++    '''
++    Test that prices are within expected range
++    '''
++
++    idx = data['price'].between(min_price, max_price)
++    assert np.sum(~idx) == 0
+diff --git a/src/eda/conda.yml b/src/eda/conda.yml
+index 2411369..6347359 100644
+--- a/src/eda/conda.yml
++++ b/src/eda/conda.yml
+@@ -3,11 +3,11 @@ channels:
+   - conda-forge
+   - defaults
+ dependencies:
+-  - jupyterlab=3.0.12
++  - jupyter=1.0.0 #jupyterlab=3.0.12
+   - seaborn=0.11.1
+   - pandas=1.2.3
+   - pip=20.3.3
+-  - pandas-profiling=2.11.0
++  - pandas-profiling=3.6.1 #3.1.0 #2.11.0
+   - pyarrow=2.0
+   - pip:
+       - wandb==0.10.31
+\ No newline at end of file
+diff --git a/src/train_random_forest/conda.yml b/src/train_random_forest/conda.yml
+index c481bc6..74e5535 100644
+--- a/src/train_random_forest/conda.yml
++++ b/src/train_random_forest/conda.yml
+@@ -5,9 +5,9 @@ channels:
+ dependencies:
+   - pandas=1.1.4
+   - pip=20.3.3
+-  - mlflow=1.14.1
++  - mlflow=2.2.2 #1.14.1
+   - scikit-learn=0.24.1
+-  - matplotlib=3.2.2
+   - pillow=8.1.2
+   - pip:
+       - wandb==0.10.21
++      - matplotlib==3.2.2
+diff --git a/src/train_random_forest/run.py b/src/train_random_forest/run.py
+index d8f37d4..77036f8 100644
+--- a/src/train_random_forest/run.py
++++ b/src/train_random_forest/run.py
+@@ -1,7 +1,11 @@
+ #!/usr/bin/env python
+ """
+-This script trains a Random Forest
++This script trains a Random Forest model for prediction and export to wandb as an artifact.
++
++Author: Femi Bolarinwa
++Date: August 2023
+ """
++
+ import argparse
+ import logging
+ import os
+@@ -30,6 +34,7 @@ def delta_date_feature(dates):
+     Given a 2d array containing dates (in any format recognized by pd.to_datetime), it returns the delta in days
+     between each date and the most recent date in its column
+     """
++
+     date_sanitized = pd.DataFrame(dates).apply(pd.to_datetime)
+     return date_sanitized.apply(lambda d: (d.max() -d).dt.days, axis=0).to_numpy()
+ 
+@@ -39,46 +44,44 @@ logger = logging.getLogger()
+ 
+ 
+ def go(args):
++    """
++    Trains a random forest model and logs artifacts and metrics to wandb
++    """
+ 
+     run = wandb.init(job_type="train_random_forest")
+     run.config.update(args)
+ 
+-    # Get the Random Forest configuration and update W&B
++    # Loading the Random Forest configuration and update W&B
+     with open(args.rf_config) as fp:
+         rf_config = json.load(fp)
+     run.config.update(rf_config)
+ 
+-    # Fix the random seed for the Random Forest, so we get reproducible results
++    # Fixing the random seed for the Random Forest, so we get reproducible results
+     rf_config['random_state'] = args.random_seed
+ 
+-    ######################################
+-    # Use run.use_artifact(...).file() to get the train and validation artifact (args.trainval_artifact)
+-    # and save the returned path in train_local_pat
+-    trainval_local_path = # YOUR CODE HERE
+-    ######################################
++    # getting the train and validation artifact (args.trainval_artifact)
++    # and saving the returned path in trainval_local_path
++    logger.info("Downloading and reading trainval artifact")
++    trainval_local_path = run.use_artifact(args.trainval_artifact).file()
+ 
++    
+     X = pd.read_csv(trainval_local_path)
+     y = X.pop("price")  # this removes the column "price" from X and puts it into y
+-
+     logger.info(f"Minimum price: {y.min()}, Maximum price: {y.max()}")
+ 
++    #train/test split
+     X_train, X_val, y_train, y_val = train_test_split(
+         X, y, test_size=args.val_size, stratify=X[args.stratify_by], random_state=args.random_seed
+     )
+ 
+     logger.info("Preparing sklearn pipeline")
+-
+     sk_pipe, processed_features = get_inference_pipeline(rf_config, args.max_tfidf_features)
+ 
+-    # Then fit it to the X_train, y_train data
++    # Then fitting it to the X_train, y_train data
+     logger.info("Fitting")
++    sk_pipe.fit(X_train, y_train)
+ 
+-    ######################################
+-    # Fit the pipeline sk_pipe by calling the .fit method on X_train and y_train
+-    # YOUR CODE HERE
+-    ######################################
+-
+-    # Compute r2 and MAE
++    # Computing metrics (r2 and MAE)
+     logger.info("Scoring")
+     r_squared = sk_pipe.score(X_val, y_val)
+ 
+@@ -90,36 +93,43 @@ def go(args):
+ 
+     logger.info("Exporting model")
+ 
+-    # Save model package in the MLFlow sklearn format
++    # creating a directory to saving model package in the MLFlow sklearn format
+     if os.path.exists("random_forest_dir"):
+         shutil.rmtree("random_forest_dir")
+ 
+-    ######################################
+-    # Save the sk_pipe pipeline as a mlflow.sklearn model in the directory "random_forest_dir"
+-    # HINT: use mlflow.sklearn.save_model
+-    # YOUR CODE HERE
+-    ######################################
+-
+-    ######################################
+-    # Upload the model we just exported to W&B
+-    # HINT: use wandb.Artifact to create an artifact. Use args.output_artifact as artifact name, "model_export" as
+-    # type, provide a description and add rf_config as metadata. Then, use the .add_dir method of the artifact instance
+-    # you just created to add the "random_forest_dir" directory to the artifact, and finally use
++    # Saving the sk_pipe pipeline as a mlflow.sklearn model in the directory "random_forest_dir"
++    mlflow.sklearn.save_model(
++            sk_pipe,
++            "random_forest_dir", #export_path,
++            serialization_format=mlflow.sklearn.SERIALIZATION_FORMAT_CLOUDPICKLE,
++            #signature=signature,
++            #input_example=X_val.iloc[:2],
++        )
++
++    # Uploading the model we just exported to W&B.
++    # using wandb.Artifact to create an artifact. then using args.output_artifact as artifact name, "model_export" as
++    # type, providing a description and adding rf_config as metadata. Then, using the .add_dir method of the artifact instance
++    # just created to add the "random_forest_dir" directory to the artifact, and finally using
+     # run.log_artifact to log the artifact to the run
+-    # YOUR CODE HERE
+-    ######################################
+ 
+-    # Plot feature importance
++
++    artifact = wandb.Artifact(
++        args.output_artifact,
++        type="model_export",
++        description="Random Forest model export",
++        metadata = rf_config
++    )
++    artifact.add_dir("random_forest_dir")
++    run.log_artifact(artifact)
++
++    # Plotting feature importance
+     fig_feat_imp = plot_feature_importance(sk_pipe, processed_features)
+ 
+-    ######################################
+-    # Here we save r_squared under the "r2" key
++    # logging metrics (r_squared, mae) in run summary under the "r2", "mae" keys
+     run.summary['r2'] = r_squared
+-    # Now log the variable "mae" under the key "mae".
+-    # YOUR CODE HERE
+-    ######################################
++    run.summary['mae'] = mae
+ 
+-    # Upload to W&B the feture importance visualization
++    # Uploading to W&B the feture importance visualization
+     run.log(
+         {
+           "feature_importance": wandb.Image(fig_feat_imp),
+@@ -128,13 +138,15 @@ def go(args):
+ 
+ 
+ def plot_feature_importance(pipe, feat_names):
+-    # We collect the feature importance for all non-nlp features first
++    # collecting the feature importance for all non-nlp features first
+     feat_imp = pipe["random_forest"].feature_importances_[: len(feat_names)-1]
++
+     # For the NLP feature we sum across all the TF-IDF dimensions into a global
+     # NLP importance
+     nlp_importance = sum(pipe["random_forest"].feature_importances_[len(feat_names) - 1:])
+     feat_imp = np.append(feat_imp, nlp_importance)
+     fig_feat_imp, sub_feat_imp = plt.subplots(figsize=(10, 10))
++
+     # idx = np.argsort(feat_imp)[::-1]
+     sub_feat_imp.bar(range(feat_imp.shape[0]), feat_imp, color="r", align="center")
+     _ = sub_feat_imp.set_xticks(range(feat_imp.shape[0]))
+@@ -149,16 +161,19 @@ def get_inference_pipeline(rf_config, max_tfidf_features):
+     # for room type: 'Entire home/apt' > 'Private room' > 'Shared room'
+     ordinal_categorical = ["room_type"]
+     non_ordinal_categorical = ["neighbourhood_group"]
++
+     # NOTE: we do not need to impute room_type because the type of the room
+     # is mandatory on the websites, so missing values are not possible in production
+     # (nor during training). That is not true for neighbourhood_group
+     ordinal_categorical_preproc = OrdinalEncoder()
+ 
+     ######################################
+-    # Build a pipeline with two steps:
++    # Building a pipeline with two steps:
+     # 1 - A SimpleImputer(strategy="most_frequent") to impute missing values
+     # 2 - A OneHotEncoder() step to encode the variable
+-    non_ordinal_categorical_preproc = # YOUR CODE HERE
++    non_ordinal_categorical_preproc = make_pipeline(
++        SimpleImputer(strategy="most_frequent"), OneHotEncoder()
++            )
+     ######################################
+ 
+     # Let's impute the numerical columns to make sure we can handle missing values
+@@ -209,15 +224,20 @@ def get_inference_pipeline(rf_config, max_tfidf_features):
+ 
+     processed_features = ordinal_categorical + non_ordinal_categorical + zero_imputed + ["last_review", "name"]
+ 
+-    # Create random forest
++    #initializing a random forest model
+     random_Forest = RandomForestRegressor(**rf_config)
+ 
+     ######################################
+-    # Create the inference pipeline. The pipeline must have 2 steps: a step called "preprocessor" applying the
++    # Creating the inference pipeline. The pipeline will have 2 steps: a step called "preprocessor" applying the
+     # ColumnTransformer instance that we saved in the `preprocessor` variable, and a step called "random_forest"
+     # with the random forest instance that we just saved in the `random_forest` variable.
+-    # HINT: Use the explicit Pipeline constructor so you can assign the names to the steps, do not use make_pipeline
+-    sk_pipe = # YOUR CODE HERE
++    # i'm using the explicit Pipeline constructor so i can assign the names to the steps, do not use make_pipeline
++    sk_pipe = Pipeline(
++        steps=[
++            ("preprocessor", preprocessor),
++            ("random_forest", random_Forest),
++        ]
++    )# 
+ 
+     return sk_pipe, processed_features
+ 
