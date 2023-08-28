@@ -1,0 +1,6 @@
+
+2023-08-28 13:41:33,537 Downloading artifacts
+2023-08-28 13:41:35,272 Loading model and performing inference on test set
+2023-08-28 13:41:35,461 Scoring
+2023-08-28 13:41:35,524 Score: 0.5770508910166063
+2023-08-28 13:41:35,524 MAE: 32.38103973723886

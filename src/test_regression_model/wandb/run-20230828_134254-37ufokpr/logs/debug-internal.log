@@ -1,0 +1,149 @@
+2023-08-28 13:42:55,056 INFO    MainThread:4561 [internal.py:wandb_internal():88] W&B internal server running at pid: 4561, started at: 2023-08-28 13:42:55.055928
+2023-08-28 13:42:55,056 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: check_version
+2023-08-28 13:42:55,056 INFO    WriterThread:4561 [datastore.py:open_for_write():77] open: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/run-37ufokpr.wandb
+2023-08-28 13:42:55,057 DEBUG   SenderThread:4561 [sender.py:send():179] send: header
+2023-08-28 13:42:55,057 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: check_version
+2023-08-28 13:42:55,202 DEBUG   SenderThread:4561 [sender.py:send():179] send: run
+2023-08-28 13:42:55,530 INFO    SenderThread:4561 [dir_watcher.py:__init__():168] watching files in: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files
+2023-08-28 13:42:55,530 INFO    SenderThread:4561 [sender.py:_start_run_threads():704] run started: 37ufokpr with start time 1693244574
+2023-08-28 13:42:55,530 DEBUG   SenderThread:4561 [sender.py:send():179] send: summary
+2023-08-28 13:42:55,531 INFO    SenderThread:4561 [sender.py:_save_file():829] saving file wandb-summary.json with policy end
+2023-08-28 13:42:55,531 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: run_start
+2023-08-28 13:42:55,533 DEBUG   HandlerThread:4561 [meta.py:__init__():39] meta init
+2023-08-28 13:42:55,533 DEBUG   HandlerThread:4561 [meta.py:__init__():53] meta init done
+2023-08-28 13:42:55,533 DEBUG   HandlerThread:4561 [meta.py:probe():210] probe
+2023-08-28 13:42:55,539 DEBUG   HandlerThread:4561 [meta.py:_setup_git():200] setup git
+2023-08-28 13:42:55,563 DEBUG   HandlerThread:4561 [meta.py:_setup_git():207] setup git done
+2023-08-28 13:42:55,564 DEBUG   HandlerThread:4561 [meta.py:_save_pip():57] save pip
+2023-08-28 13:42:55,564 DEBUG   HandlerThread:4561 [meta.py:_save_pip():71] save pip done
+2023-08-28 13:42:55,564 DEBUG   HandlerThread:4561 [meta.py:_save_conda():78] save conda
+2023-08-28 13:42:56,514 DEBUG   HandlerThread:4561 [meta.py:_save_conda():86] save conda done
+2023-08-28 13:42:56,515 DEBUG   HandlerThread:4561 [meta.py:probe():252] probe done
+2023-08-28 13:42:56,519 DEBUG   SenderThread:4561 [sender.py:send():179] send: telemetry
+2023-08-28 13:42:56,521 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: stop_status
+2023-08-28 13:42:56,537 INFO    Thread-8  :4561 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/wandb-metadata.json
+2023-08-28 13:42:56,537 INFO    Thread-8  :4561 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/wandb-summary.json
+2023-08-28 13:42:56,537 INFO    Thread-8  :4561 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/requirements.txt
+2023-08-28 13:42:56,537 INFO    Thread-8  :4561 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/output.log
+2023-08-28 13:42:56,537 INFO    Thread-8  :4561 [dir_watcher.py:_on_file_created():216] file/dir created: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/conda-environment.yaml
+2023-08-28 13:42:56,710 DEBUG   SenderThread:4561 [sender.py:send():179] send: files
+2023-08-28 13:42:56,711 INFO    SenderThread:4561 [sender.py:_save_file():829] saving file wandb-metadata.json with policy now
+2023-08-28 13:42:56,711 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: stop_status
+2023-08-28 13:42:56,921 DEBUG   SenderThread:4561 [sender.py:send():179] send: config
+2023-08-28 13:42:57,307 INFO    Thread-11 :4561 [upload_job.py:push():133] Uploaded file /var/folders/hg/4w5qntdd3xl81j7pjn9pd1fh0000gn/T/tmpe9051rwcwandb/3jbz88u6-wandb-metadata.json
+2023-08-28 13:42:57,541 INFO    Thread-8  :4561 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/config.yaml
+2023-08-28 13:42:58,436 DEBUG   SenderThread:4561 [sender.py:send():179] send: summary
+2023-08-28 13:42:58,436 INFO    SenderThread:4561 [sender.py:_save_file():829] saving file wandb-summary.json with policy end
+2023-08-28 13:42:58,436 DEBUG   SenderThread:4561 [sender.py:send():179] send: summary
+2023-08-28 13:42:58,436 INFO    SenderThread:4561 [sender.py:_save_file():829] saving file wandb-summary.json with policy end
+2023-08-28 13:42:58,542 INFO    Thread-8  :4561 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/config.yaml
+2023-08-28 13:42:58,542 INFO    Thread-8  :4561 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/output.log
+2023-08-28 13:42:58,542 INFO    Thread-8  :4561 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/wandb-summary.json
+2023-08-28 13:43:00,550 INFO    Thread-8  :4561 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/output.log
+2023-08-28 13:43:00,557 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-28 13:43:00,558 DEBUG   SenderThread:4561 [sender.py:send():179] send: telemetry
+2023-08-28 13:43:00,558 DEBUG   SenderThread:4561 [sender.py:send():179] send: exit
+2023-08-28 13:43:00,558 INFO    SenderThread:4561 [sender.py:send_exit():287] handling exit code: 0
+2023-08-28 13:43:00,558 INFO    SenderThread:4561 [sender.py:send_exit():295] send defer
+2023-08-28 13:43:00,559 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: poll_exit
+2023-08-28 13:43:00,559 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: defer
+2023-08-28 13:43:00,559 INFO    HandlerThread:4561 [handler.py:handle_request_defer():141] handle defer: 0
+2023-08-28 13:43:00,560 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: defer
+2023-08-28 13:43:00,560 INFO    SenderThread:4561 [sender.py:send_request_defer():304] handle sender defer: 0
+2023-08-28 13:43:00,560 INFO    SenderThread:4561 [sender.py:send_request_defer():342] send defer: 1
+2023-08-28 13:43:00,560 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: defer
+2023-08-28 13:43:00,560 INFO    HandlerThread:4561 [handler.py:handle_request_defer():141] handle defer: 1
+2023-08-28 13:43:01,134 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-28 13:43:01,134 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: defer
+2023-08-28 13:43:01,134 INFO    SenderThread:4561 [sender.py:send_request_defer():304] handle sender defer: 1
+2023-08-28 13:43:01,134 INFO    SenderThread:4561 [sender.py:send_request_defer():342] send defer: 2
+2023-08-28 13:43:01,134 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: poll_exit
+2023-08-28 13:43:01,134 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: defer
+2023-08-28 13:43:01,134 INFO    HandlerThread:4561 [handler.py:handle_request_defer():141] handle defer: 2
+2023-08-28 13:43:01,134 DEBUG   SenderThread:4561 [sender.py:send():179] send: stats
+2023-08-28 13:43:01,135 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: defer
+2023-08-28 13:43:01,135 INFO    SenderThread:4561 [sender.py:send_request_defer():304] handle sender defer: 2
+2023-08-28 13:43:01,135 INFO    SenderThread:4561 [sender.py:send_request_defer():342] send defer: 3
+2023-08-28 13:43:01,135 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: defer
+2023-08-28 13:43:01,135 INFO    HandlerThread:4561 [handler.py:handle_request_defer():141] handle defer: 3
+2023-08-28 13:43:01,135 DEBUG   SenderThread:4561 [sender.py:send():179] send: summary
+2023-08-28 13:43:01,135 INFO    SenderThread:4561 [sender.py:_save_file():829] saving file wandb-summary.json with policy end
+2023-08-28 13:43:01,135 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: defer
+2023-08-28 13:43:01,135 INFO    SenderThread:4561 [sender.py:send_request_defer():304] handle sender defer: 3
+2023-08-28 13:43:01,135 INFO    SenderThread:4561 [sender.py:send_request_defer():342] send defer: 4
+2023-08-28 13:43:01,135 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: defer
+2023-08-28 13:43:01,135 INFO    HandlerThread:4561 [handler.py:handle_request_defer():141] handle defer: 4
+2023-08-28 13:43:01,135 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: defer
+2023-08-28 13:43:01,135 INFO    SenderThread:4561 [sender.py:send_request_defer():304] handle sender defer: 4
+2023-08-28 13:43:01,240 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-28 13:43:01,557 INFO    Thread-8  :4561 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/output.log
+2023-08-28 13:43:01,557 INFO    Thread-8  :4561 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/wandb-summary.json
+2023-08-28 13:43:01,592 INFO    SenderThread:4561 [sender.py:send_request_defer():342] send defer: 5
+2023-08-28 13:43:01,592 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: poll_exit
+2023-08-28 13:43:01,593 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: defer
+2023-08-28 13:43:01,593 INFO    HandlerThread:4561 [handler.py:handle_request_defer():141] handle defer: 5
+2023-08-28 13:43:01,594 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: defer
+2023-08-28 13:43:01,594 INFO    SenderThread:4561 [sender.py:send_request_defer():304] handle sender defer: 5
+2023-08-28 13:43:01,594 INFO    SenderThread:4561 [dir_watcher.py:finish():282] shutting down directory watcher
+2023-08-28 13:43:01,697 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-28 13:43:02,560 INFO    SenderThread:4561 [dir_watcher.py:_on_file_modified():229] file/dir modified: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/config.yaml
+2023-08-28 13:43:02,561 INFO    SenderThread:4561 [dir_watcher.py:finish():312] scan: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files
+2023-08-28 13:43:02,561 INFO    SenderThread:4561 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/requirements.txt requirements.txt
+2023-08-28 13:43:02,562 INFO    SenderThread:4561 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/output.log output.log
+2023-08-28 13:43:02,569 INFO    SenderThread:4561 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/config.yaml config.yaml
+2023-08-28 13:43:02,575 INFO    SenderThread:4561 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/wandb-summary.json wandb-summary.json
+2023-08-28 13:43:02,581 INFO    SenderThread:4561 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/conda-environment.yaml conda-environment.yaml
+2023-08-28 13:43:02,582 INFO    SenderThread:4561 [dir_watcher.py:finish():318] scan save: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/wandb-metadata.json wandb-metadata.json
+2023-08-28 13:43:02,583 INFO    SenderThread:4561 [sender.py:send_request_defer():342] send defer: 6
+2023-08-28 13:43:02,583 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: poll_exit
+2023-08-28 13:43:02,590 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: defer
+2023-08-28 13:43:02,591 INFO    HandlerThread:4561 [handler.py:handle_request_defer():141] handle defer: 6
+2023-08-28 13:43:02,591 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: defer
+2023-08-28 13:43:02,591 INFO    SenderThread:4561 [sender.py:send_request_defer():304] handle sender defer: 6
+2023-08-28 13:43:02,591 INFO    SenderThread:4561 [file_pusher.py:finish():176] shutting down file pusher
+2023-08-28 13:43:02,592 INFO    SenderThread:4561 [sender.py:send_request_defer():342] send defer: 7
+2023-08-28 13:43:02,593 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: defer
+2023-08-28 13:43:02,593 INFO    HandlerThread:4561 [handler.py:handle_request_defer():141] handle defer: 7
+2023-08-28 13:43:02,594 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: defer
+2023-08-28 13:43:02,594 INFO    SenderThread:4561 [sender.py:send_request_defer():304] handle sender defer: 7
+2023-08-28 13:43:02,690 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-28 13:43:02,825 INFO    SenderThread:4561 [sender.py:send_request_defer():342] send defer: 8
+2023-08-28 13:43:02,826 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: poll_exit
+2023-08-28 13:43:02,831 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: defer
+2023-08-28 13:43:02,831 INFO    HandlerThread:4561 [handler.py:handle_request_defer():141] handle defer: 8
+2023-08-28 13:43:02,832 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: defer
+2023-08-28 13:43:02,832 INFO    SenderThread:4561 [sender.py:send_request_defer():304] handle sender defer: 8
+2023-08-28 13:43:02,832 INFO    SenderThread:4561 [sender.py:send_request_defer():342] send defer: 9
+2023-08-28 13:43:02,835 DEBUG   SenderThread:4561 [sender.py:send():179] send: final
+2023-08-28 13:43:02,835 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: defer
+2023-08-28 13:43:02,836 DEBUG   SenderThread:4561 [sender.py:send():179] send: footer
+2023-08-28 13:43:02,836 INFO    HandlerThread:4561 [handler.py:handle_request_defer():141] handle defer: 9
+2023-08-28 13:43:02,836 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: defer
+2023-08-28 13:43:02,836 INFO    SenderThread:4561 [sender.py:send_request_defer():304] handle sender defer: 9
+2023-08-28 13:43:02,938 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-28 13:43:02,938 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: poll_exit
+2023-08-28 13:43:03,044 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-28 13:43:03,045 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: poll_exit
+2023-08-28 13:43:03,147 INFO    Thread-15 :4561 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/wandb-summary.json
+2023-08-28 13:43:03,147 INFO    Thread-13 :4561 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/output.log
+2023-08-28 13:43:03,151 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-28 13:43:03,152 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: poll_exit
+2023-08-28 13:43:03,173 INFO    Thread-16 :4561 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/conda-environment.yaml
+2023-08-28 13:43:03,183 INFO    Thread-14 :4561 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/config.yaml
+2023-08-28 13:43:03,184 INFO    Thread-12 :4561 [upload_job.py:push():133] Uploaded file /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/files/requirements.txt
+2023-08-28 13:43:03,260 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-28 13:43:03,261 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: poll_exit
+2023-08-28 13:43:03,368 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-28 13:43:03,369 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: poll_exit
+2023-08-28 13:43:03,477 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: poll_exit
+2023-08-28 13:43:03,478 DEBUG   SenderThread:4561 [sender.py:send_request():193] send_request: poll_exit
+2023-08-28 13:43:03,478 INFO    SenderThread:4561 [file_pusher.py:join():181] waiting for file pusher
+2023-08-28 13:43:03,481 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: get_summary
+2023-08-28 13:43:03,483 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: sampled_history
+2023-08-28 13:43:03,484 DEBUG   HandlerThread:4561 [handler.py:handle_request():124] handle_request: shutdown
+2023-08-28 13:43:03,485 INFO    HandlerThread:4561 [handler.py:finish():638] shutting down handler
+2023-08-28 13:43:03,839 INFO    WriterThread:4561 [datastore.py:close():258] close: /Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/wandb/run-20230828_134254-37ufokpr/run-37ufokpr.wandb
+2023-08-28 13:43:04,484 INFO    SenderThread:4561 [sender.py:finish():933] shutting down sender
+2023-08-28 13:43:04,484 INFO    SenderThread:4561 [file_pusher.py:finish():176] shutting down file pusher
+2023-08-28 13:43:04,484 INFO    SenderThread:4561 [file_pusher.py:join():181] waiting for file pusher
+2023-08-28 13:43:04,487 INFO    MainThread:4561 [internal.py:handle_exit():78] Internal process exited

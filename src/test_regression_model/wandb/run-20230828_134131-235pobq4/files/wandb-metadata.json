@@ -1,0 +1,27 @@
+{
+    "os": "macOS-13.4-arm64-arm-64bit",
+    "python": "3.9.16",
+    "heartbeatAt": "2023-08-28T17:41:32.529950",
+    "startedAt": "2023-08-28T17:41:31.731609",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--mlflow_model",
+        "random_forest_export:prod",
+        "--test_dataset",
+        "test_data.csv:latest"
+    ],
+    "state": "running",
+    "program": "/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline/src/test_regression_model/run.py",
+    "codePath": "src/test_regression_model/run.py",
+    "git": {
+        "remote": "https://github.com/f3bolarinwa/MLOps_project_ml_pipeline.git",
+        "commit": "1960da140c7c47d5bb8e5da52b3b7cbe69720e55"
+    },
+    "email": "f3bolarinwa@yahoo.com",
+    "root": "/Users/femibolarinwa_comp/Downloads/Udacity/MLOps Engineer/2-Building a Reproducible Model Workflow/MLOps_project_ml_pipeline",
+    "host": "Femis-MacBook-Air.local",
+    "username": "femibolarinwa_comp",
+    "executable": "/Users/femibolarinwa_comp/miniconda3/envs/mlflow-7c1105010a7863c997e4d727b4925ee1ab6ef635/bin/python"
+}

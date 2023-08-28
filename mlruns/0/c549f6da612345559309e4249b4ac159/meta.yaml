@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/femibolarinwa_comp/Downloads/Udacity/MLOps%20Engineer/2-Building%20a%20Reproducible%20Model%20Workflow/MLOps_project_ml_pipeline/mlruns/0/c549f6da612345559309e4249b4ac159/artifacts
+end_time: 1693244500552
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c549f6da612345559309e4249b4ac159
+run_name: likeable-wasp-680
+run_uuid: c549f6da612345559309e4249b4ac159
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693244489327
+status: 3
+tags: []
+user_id: femibolarinwa_comp

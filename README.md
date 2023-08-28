@@ -29,7 +29,7 @@ Overview of the content in repository:
 9)pipeline graph/wandb end-to-end pipeline graph.png shows entire ML pipeline and its components in graph view. Extracted from wandb
 
 ## ML pipeline artifact/experiment tracking
-Available on Weights & Biases: https://wandb.ai/f3bolarinwa/MLOps_nyc_airbnb
+Please find my ML pipeline artifacts and experiment on Weights & Biases: https://wandb.ai/f3bolarinwa/MLOps_nyc_airbnb
 
 ## Github Repository for Releases
 https://github.com/f3bolarinwa/MLOps_project_ml_pipeline.git

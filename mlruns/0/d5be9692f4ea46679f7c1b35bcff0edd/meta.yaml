@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/femibolarinwa_comp/Downloads/Udacity/MLOps%20Engineer/2-Building%20a%20Reproducible%20Model%20Workflow/MLOps_project_ml_pipeline/mlruns/0/d5be9692f4ea46679f7c1b35bcff0edd/artifacts
+end_time: 1693244584823
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d5be9692f4ea46679f7c1b35bcff0edd
+run_name: abundant-steed-818
+run_uuid: d5be9692f4ea46679f7c1b35bcff0edd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693244570026
+status: 3
+tags: []
+user_id: femibolarinwa_comp
