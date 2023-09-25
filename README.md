@@ -9,6 +9,9 @@ time on various rental platforms needs a ML model to estimate the typical price 
 on the price of similar properties. The company receives new data in bulk every week. The model needs 
 to be retrained with the same cadence, necessitating a need for an end-to-end pipeline that can be reused.
 
+I built a reusable MLflow end-to-end ML pipeline for price prediction. Inference pipeline components: ETL, EDA, data validation (pytest, unit testing), feature engineering, train-test data split, model training. Runtime environment isolation with Conda. Weights&Biases for ML artifacts/experiment tracking and model repository. MLflow+Hydra for model hyper-parameter optimization and configuration management. Github for code tracking and version release. Logging and argparse. MLflow models for real-time and batch deployment.
+
+
 ## Repository Content Description
 Overview of the content in repository:
 
