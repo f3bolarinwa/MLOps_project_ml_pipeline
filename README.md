@@ -17,7 +17,7 @@ Overview of the content in repository:
 
 1)cookie-mlflow-step: contains template to quickly generate new component steps to be used with MLFlow. See README inside directory
 
-2)src: contains components constituting the ML pipeline. Each component contains its own conda.yml, MLproject and run.py script.
+2)src: contains pipeline components constituting the ML pipeline. Each component contains its own conda.yml, MLproject and run.py script.
 
 3)MLproject: an MLproject for the main pipeline
 
