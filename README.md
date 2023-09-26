@@ -46,34 +46,37 @@ git clone https://github.com/f3bolarinwa/MLOps_project_ml_pipeline.git
 3)create a conda environment on local machine by executing in terminal:
 "conda env create -f environment.yml"
 
-4)activate conda by executing in terminal:
+4)install required versions of pip packages by executing:
+"pip install -r requirements.txt"
+
+5)activate conda by executing in terminal:
 "conda activate nyc_airbnb_dev"
 
-5)Ensure you have a wandb account (for ML model,artifact, experiment tracking). Get your API key from W&B by going to: https://wandb.ai/authorize
+6)Ensure you have a wandb account (for ML model,artifact, experiment tracking). Get your API key from W&B by going to: https://wandb.ai/authorize
 
-6)Login to wandb by executing in terminal:
+7)Login to wandb by executing in terminal:
 "wandb login [your API key]"
 
-7)Run first two ML pipeline components by executing in terminal:
+8)Run first two ML pipeline components by executing in terminal:
 mlflow run . -P steps=download,basic_cleaning
 
-8)Go to wandb, examine artifacts. Tag data artifact clean_sample.csv as "reference" for data test/validation
+9)Go to wandb, examine artifacts. Tag data artifact clean_sample.csv as "reference" for data test/validation
 
-9)Test and validate data by executing:
+10)Test and validate data by executing:
 mlflow run . -P steps=data_check
 
-10)Train ML model by executing:
+11)Train ML model by executing:
 mlflow run . -P steps=data_split,train_random_forest
 
-11)Conduct hyperparamter optimization by using hydra sweep:
+12)Conduct hyperparamter optimization by using hydra sweep:
 mlflow run . \
   -P steps=train_random_forest \
   -P hydra_options="modeling.random_forest.max_depth=10,50,100 modeling.random_forest.n_estimators=100,200,500 -m"
 
-12)Go to wandb and examine runs, metrics and artifacts. Tag best performing model artifact (random_forest_export) as "prod",
+13)Go to wandb and examine runs, metrics and artifacts. Tag best performing model artifact (random_forest_export) as "prod",
 
-13)To test model on unseen test data, execute:
+14)To test model on unseen test data, execute:
 mlflow run . -P steps=test_regression_model
 
-14)Train the model on a new data sample by executing in terminal:
+15)Train the model on a new data sample by executing in terminal:
 mlflow run https://github.com/f3bolarinwa/MLOps_project_ml_pipeline.git -v 1.0.2 -P hydra_options="etl.sample='sample2.csv'"
