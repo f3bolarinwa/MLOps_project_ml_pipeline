@@ -19,7 +19,7 @@ Overview of the content in repository:
 
 2)src: contains pipeline components constituting the ML pipeline. Each component contains its own conda.yml, MLproject and run.py script.
 
-3)MLproject: an MLproject for the main pipeline
+3)MLproject: MLflow MLproject for the main pipeline
 
 4)conda.yml: defines all dependencies of the conda environment needed for main pipeline
 
