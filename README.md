@@ -31,6 +31,8 @@ Overview of the content in repository:
 
 8)pipeline graph/wandb end-to-end pipeline graph.png: shows entire ML pipeline and its components in graph view. Extracted from wandb
 
+9)requirements.txt: contains all pip package requirements 
+
 ## ML pipeline artifact/experiment tracking
 Please find my ML pipeline artifacts and experiment on Weights & Biases: https://wandb.ai/f3bolarinwa/MLOps_nyc_airbnb
 
