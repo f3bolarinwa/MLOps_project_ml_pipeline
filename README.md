@@ -1,7 +1,5 @@
 # Project: Build an ML Pipeline for Short-Term Rental Price Prediction in NYC
 
-A program requirement for Machine Learning DevOps Engineer Nanodegree @ Udacity School of Artificial Intelligence
-
 ## Project Description
 
 A property management company renting rooms and properties for short periods of 
